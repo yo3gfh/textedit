@@ -1,0 +1,8 @@
+output
+spawn\spawn.exe
+spawn\output
+textedit\textedit.exe
+textedit\spawn.exe
+textedit\output
+texteditsh\output
+
