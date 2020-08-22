@@ -18,7 +18,16 @@
 	<category name="menus.h" />
 	<category name="mem.h" />
 	<category name="config.h" />
-	<category name="textedit.c" />
+	<category name="textedit.c">
+		<category name="Window">
+			<property name="Left" type="integer">4294967288</property>
+			<property name="Top" type="integer">4294967266</property>
+			<property name="Right" type="integer">1582</property>
+			<property name="Bottom" type="integer">760</property>
+			<property name="Maximized" type="integer">1</property>
+			<property name="Active" type="integer">1</property>
+		</category>
+	</category>
 	<category name="main.h" />
 	<category name="encoding.h" />
 	<category name="encoding.c" />
