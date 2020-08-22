@@ -12,7 +12,7 @@ So welcome to more crap :-))
 **Some random thoughts**
 
 Originally buit with OpenWatcom, moved it to the Pelle's C compiler system<br>
-http://www.smorgasbordet.com/pellesc/index.htm
+<http://www.smorgasbordet.com/pellesc/index.htm>
 
 After working with Richedit, I can now fully understand why ppl go all the way
 and write their own custom edit controls.
