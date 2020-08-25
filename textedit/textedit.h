@@ -126,12 +126,14 @@
     #define CCH_SPEC2 L"Error opening %ls"
     #define CCH_SPEC3 L"Error saving %ls"
     #define CCH_SPEC4 L"Original file encoding (%ls) differs from merged file encoding (%ls). Take care when saving! (select a UNICODE mode to be sure)"
+    #define CCH_SPEC5 L"Library \"%ls\" not present :(" 
 #else
     #define CCH_SPEC "%s, filesize is %.2f %s"
     #define CCH_SPEC1 "File saved as %s, %.2f %s saved to disk"
     #define CCH_SPEC2 "Error opening %s"
     #define CCH_SPEC3 "Error saving %s"
     #define CCH_SPEC4 "Original file encoding (%s) differs from merged file encoding (%s). Take care when saving! (select a UNICODE mode to be sure)"
+    #define CCH_SPEC5 "Library \"%s\" not present :("
 #endif
 
 typedef struct _hex_data
