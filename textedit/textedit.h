@@ -120,6 +120,8 @@
 #define         TIDX_SAV            0
 #define         TIDX_MOD            1
 
+#define         COPYDATA_MAGIC      0x0666DEAD
+
 #ifdef UNICODE
     #define CCH_SPEC L"%ls, filesize is %.2f %ls"
     #define CCH_SPEC1 L"File saved as %ls, %.2f %ls saved to disk"
