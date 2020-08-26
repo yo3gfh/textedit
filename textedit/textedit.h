@@ -94,6 +94,7 @@
 #include        "resource.h"
 #include        "encoding.h"
 
+#define         RICH_VERT_SCROLL    3       // scroll three lines at a time
 #define         IDC_STATUS          666
 #define         IDFIND              1
 #define         IDREPLACE           2
