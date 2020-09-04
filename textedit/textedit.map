@@ -1,14 +1,14 @@
  textedit.exe
 
- Timestamp is 5f523fc0 (Fri Sep  4 16:23:12 2020)
+ Timestamp is 5f52758f (Fri Sep  4 20:12:47 2020)
 
  Preferred load address is 0000000140000000
 
  Start         Length     Name                   Class
- 0001:00000000 0001962dH .text                   CODE
+ 0001:00000000 0001967dH .text                   CODE
  0002:00000000 00000f90H .pdata                  DATA
  0003:00000000 00000e9cH .xdata                  DATA
- 0003:00000ea0 00003708H .rdata                  DATA
+ 0003:00000ea0 00003728H .rdata                  DATA
  0004:00000000 00001a08H .data                   DATA
  0004:00001a08 000000b4H .idata$2                DATA
  0004:00001abc 00000014H .idata$3                DATA
@@ -73,298 +73,298 @@
  0001:00003b19       FILE_FileExists            0000000140004b19 f   pathutils.obj
  0001:00003b6a       FILE_GetFileSize           0000000140004b6a f   pathutils.obj
  0001:00003c01       FILE_MakeFullIniFname      0000000140004c01 f   pathutils.obj
- 0001:00004030       Rich_GetCaretPos           0000000140005030 f   rich.obj
- 0001:000040bc       Rich_GetModified           00000001400050bc f   rich.obj
- 0001:000040e8       Rich_CanUndo               00000001400050e8 f   rich.obj
- 0001:00004114       Rich_CanRedo               0000000140005114 f   rich.obj
- 0001:00004140       Rich_CanPaste              0000000140005140 f   rich.obj
- 0001:0000416c       Rich_SetModified           000000014000516c f   rich.obj
- 0001:00004199       Rich_ConvertCase           0000000140005199 f   rich.obj
- 0001:00004274       Rich_ConvertTabsToSpaces   0000000140005274 f   rich.obj
- 0001:000042fa       Rich_SetBGColor            00000001400052fa f   rich.obj
- 0001:000045bf       Rich_SetFGColor            00000001400055bf f   rich.obj
- 0001:000048f8       Rich_FindNext              00000001400058f8 f   rich.obj
- 0001:000049ea       Rich_TabReplace            00000001400059ea f   rich.obj
- 0001:00004aab       Rich_GotoLine              0000000140005aab f   rich.obj
- 0001:00004b13       Rich_FindReplaceText       0000000140005b13 f   rich.obj
- 0001:00004dc1       Rich_GetLineCount          0000000140005dc1 f   rich.obj
- 0001:00004ded       Rich_GetCrtLine            0000000140005ded f   rich.obj
- 0001:00004e36       Rich_GetSelText            0000000140005e36 f   rich.obj
- 0001:00004ecd       Rich_GetSelLen             0000000140005ecd f   rich.obj
- 0001:00004f01       Rich_Print                 0000000140005f01 f   rich.obj
- 0001:00005cc9       Rich_NewRichedit           0000000140006cc9 f   rich.obj
- 0001:000060cc       Rich_Streamin              00000001400070cc f   rich.obj
- 0001:00006253       Rich_SelStreamin           0000000140007253 f   rich.obj
- 0001:000063c5       Rich_Streamout             00000001400073c5 f   rich.obj
- 0001:00006535       Rich_SelStreamout          0000000140007535 f   rich.obj
- 0001:000066a4       Rich_SetFontNoCF           00000001400076a4 f   rich.obj
- 0001:000066d2       Rich_SetFont               00000001400076d2 f   rich.obj
- 0001:000068f3       Rich_ToggleSelBar          00000001400078f3 f   rich.obj
- 0001:00006afa       Rich_WordWrap              0000000140007afa f   rich.obj
- 0001:00006b54       Rich_SaveSelandcurpos      0000000140007b54 f   rich.obj
- 0001:00006bbc       Rich_RestoreSelandcurpos   0000000140007bbc f   rich.obj
- 0001:00006c24       Rich_CreateShowCaret       0000000140007c24 f   rich.obj
- 0001:00006c68       Rich_GetFontHeight         0000000140007c68 f   rich.obj
- 0001:00006d2a       Rich_ClearText             0000000140007d2a f   rich.obj
- 0001:00006f80       SB_MakeStatusBar           0000000140007f80 f   sbar.obj
- 0001:00007064       SB_MenuHelp                0000000140008064 f   sbar.obj
- 0001:0000711e       SB_StatusResizePanels      000000014000811e f   sbar.obj
- 0001:00007215       SB_StatusSetSimple         0000000140008215 f   sbar.obj
- 0001:00007242       SB_StatusSetText           0000000140008242 f   sbar.obj
- 0001:00007280       Tab_NewTab                 0000000140008280 f   tabs.obj
- 0001:000073e3       Tab_NewTabPage             00000001400083e3 f   tabs.obj
- 0001:0000743c       Tab_DeletePage             000000014000843c f   tabs.obj
- 0001:0000746b       Tab_GetCurSel              000000014000846b f   tabs.obj
- 0001:00007497       Tab_SetCurSel              0000000140008497 f   tabs.obj
- 0001:000074c6       Tab_GetCurFocus            00000001400084c6 f   tabs.obj
- 0001:000074f2       Tab_SetCurFocus            00000001400084f2 f   tabs.obj
- 0001:00007521       Tab_GetCount               0000000140008521 f   tabs.obj
- 0001:0000754d       Tab_SetText                000000014000854d f   tabs.obj
- 0001:000075a6       Tab_SetPadding             00000001400085a6 f   tabs.obj
- 0001:000075f1       Tab_SetImageList           00000001400085f1 f   tabs.obj
- 0001:0000761f       Tab_SetImg                 000000014000861f f   tabs.obj
- 0001:00007670       WinMain                    0000000140008670 f   textedit.obj
- 0001:00007e49       TabSubclassProc            0000000140008e49 f   textedit.obj
- 0001:00007f2f       RichSubclassProc           0000000140008f2f f   textedit.obj
- 0001:000081a4       OutwSubclassProc           00000001400091a4 f   textedit.obj
- 0001:00008375       DLG_AboutDlgProc           0000000140009375 f   textedit.obj
- 0001:00008413       DLG_TabsDlgProc            0000000140009413 f   textedit.obj
- 0001:0000855d       DLG_FindDlgProc            000000014000955d f   textedit.obj
- 0001:000088fc       DLG_GotoDlgProc            00000001400098fc f   textedit.obj
- 0001:00008af2       DLG_EXTToolDlgProc         0000000140009af2 f   textedit.obj
- 0001:00008f55       DLG_OUTviewDlgProc         0000000140009f55 f   textedit.obj
- 0001:00009186       WndProc                    000000014000a186 f   textedit.obj
- 0001:000093cc       UpdateMenuStatus           000000014000a3cc f   textedit.obj
- 0001:00009866       DLG_OpenDlg                000000014000a866 f   textedit.obj
- 0001:00009ab8       DLG_SaveDlg                000000014000aab8 f   textedit.obj
- 0001:00009eac       STR_StreamInProc           000000014000aeac f   textedit.obj
- 0001:0000a9fd       STR_StreamOutProc          000000014000b9fd f   textedit.obj
- 0001:0000b26f       Prompt_to_save             000000014000c26f f   textedit.obj
- 0001:0000b331       UpdateTitlebar             000000014000c331 f   textedit.obj
- 0001:0000b396       Menu_WipeClipboard         000000014000c396 f   textedit.obj
- 0001:0000b3d3       Menu_NewInstance           000000014000c3d3 f   textedit.obj
- 0001:0000b41d       Menu_MergeFile             000000014000c41d f   textedit.obj
- 0001:0000b5d8       Menu_SaveSelection         000000014000c5d8 f   textedit.obj
- 0001:0000b65f       CvtTabsProc                000000014000c65f f   textedit.obj
- 0001:0000b70a       ExpandMacro                000000014000c70a f   textedit.obj
- 0001:0000b9ce       DLG_OutputWnd              000000014000c9ce f   textedit.obj
- 0001:0000ba06       Menu_HexView               000000014000ca06 f   textedit.obj
- 0001:0000bb06       DLG_HEXViewDlgProc         000000014000cb06 f   textedit.obj
- 0001:0000bd28       Menu_RefreshFromDisk       000000014000cd28 f   textedit.obj
- 0001:0000bfcf       ConvertTabsToSpaces        000000014000cfcf f   textedit.obj
- 0001:0000c0fc       EnableMenus                000000014000d0fc f   textedit.obj
- 0001:0000c677       Menu_Save                  000000014000d677 f   textedit.obj
- 0001:0000c9f2       Menu_Saveas                000000014000d9f2 f   textedit.obj
- 0001:0000caaa       Menu_New                   000000014000daaa f   textedit.obj
- 0001:0000cdf3       Menu_ToggleMargin          000000014000ddf3 f   textedit.obj
- 0001:0000d348       Menu_Find                  000000014000e348 f   textedit.obj
- 0001:0000d4fe       Menu_ConvertTabs           000000014000e4fe f   textedit.obj
- 0001:0000d5d8       Menu_SetFont               000000014000e5d8 f   textedit.obj
- 0001:0000d821       Menu_Print                 000000014000e821 f   textedit.obj
- 0001:0000d9b5       Menu_SetFGColor            000000014000e9b5 f   textedit.obj
- 0001:0000dbc7       Menu_SetBGColor            000000014000ebc7 f   textedit.obj
- 0001:0000dc9b       UpdateEncodingMenus        000000014000ec9b f   textedit.obj
- 0001:0000dd45       TD_UpdateTabDataEntry      000000014000ed45 f   textedit.obj
- 0001:0000e0ad       TD_RebuildTabData          000000014000f0ad f   textedit.obj
- 0001:0000e1d7       UpdateCaretPos             000000014000f1d7 f   textedit.obj
- 0001:0000e26b       Menu_WWrap                 000000014000f26b f   textedit.obj
- 0001:0000e3cf       UpdateModifiedStatus       000000014000f3cf f   textedit.obj
- 0001:0000e4f3       UpdateEncodingStatus       000000014000f4f3 f   textedit.obj
- 0001:0000e64b       Menu_Open                  000000014000f64b f   textedit.obj
- 0001:0000e79c       Menu_Quit                  000000014000f79c f   textedit.obj
- 0001:0000e7cb       QuitSaveCheck              000000014000f7cb f   textedit.obj
- 0001:0000e87c       RemoveTab                  000000014000f87c f   textedit.obj
- 0001:0000ea64       MainWND_OnDropFiles        000000014000fa64 f   textedit.obj
- 0001:0000ed4d       MainWND_OnNotify           000000014000fd4d f   textedit.obj
- 0001:0000ef4c       MainWND_OnCreate           000000014000ff4c f   textedit.obj
- 0001:0000f15c       MainWND_OnSize             000000014001015c f   textedit.obj
- 0001:0000f298       MainWND_OnInitMenuPopup    0000000140010298 f   textedit.obj
- 0001:0000f308       MainWND_OnCommand          0000000140010308 f   textedit.obj
- 0001:0000fbfd       OpenFileListFromCMDL       0000000140010bfd f   textedit.obj
- 0001:0000fef6       OpenFileListFromOFD        0000000140010ef6 f   textedit.obj
- 0001:000102df       CycleTabs                  00000001400112df f   textedit.obj
- 0001:0001048a       InitImgList                000000014001148a f   textedit.obj
- 0001:00010553       Menu_Ontop                 0000000140011553 f   textedit.obj
- 0001:000106ab       MainWND_OnCopyData         00000001400116ab f   textedit.obj
- 0001:00010dfc       RunFileDlg                 0000000140011dfc     shell32x:shell32.dll
- 0001:00010e40       _vsnwprintf                0000000140011e40 f   crtmt64:vsnwprintf.obj
- 0001:00010ea0       memcmp                     0000000140011ea0 f   crtmt64:memcmp.obj
- 0001:00010f70       __C_specific_handler       0000000140011f70 f   crtmt64:_ehandler.obj
- 0001:000110f0       memset                     00000001400120f0 f   crtmt64:memset.obj
- 0001:000111e0       ldiv                       00000001400121e0 f   crtmt64:ldiv.obj
- 0001:00011200       isprint                    0000000140012200 f   crtmt64:isprint.obj
- 0001:00011230       memcpy                     0000000140012230 f   crtmt64:memcpy.obj
- 0001:00011230       memmove                    0000000140012230     crtmt64:memcpy.obj
- 0001:00011590       _beginthread               0000000140012590 f   crtmt64:thread.obj
- 0001:00011650       _endthread                 0000000140012650 f   crtmt64:thread.obj
- 0001:000116b0       WinMainCRTStartup          00000001400126b0 f   crtmt64:_wincrt0.obj
- 0001:000117e0       __wprintf                  00000001400127e0 f   crtmt64:_wprintf.obj
- 0001:00011b60       __crt_abort                0000000140012b60 f   crtmt64:_crtabort.obj
- 0001:00011cb0       __mtinit                   0000000140012cb0 f   crtmt64:_tidtable.obj
- 0001:00011d20       __mtterm                   0000000140012d20 f   crtmt64:_tidtable.obj
- 0001:00011d90       __init_mtd                 0000000140012d90 f   crtmt64:_tidtable.obj
- 0001:00011e20       __get_mtd                  0000000140012e20 f   crtmt64:_tidtable.obj
- 0001:00011ea0       __free_mtd                 0000000140012ea0 f   crtmt64:_tidtable.obj
- 0001:00011f90       __xcptfilter               0000000140012f90 f   crtmt64:_xcptfilter.obj
- 0001:000122f0       __sheap_alloc              00000001400132f0 f   crtmt64:malloc.obj
- 0001:00012670       malloc                     0000000140013670 f   crtmt64:malloc.obj
- 0001:00012710       __sheap_free               0000000140013710 f   crtmt64:free.obj
- 0001:00012ab0       free                       0000000140013ab0 f   crtmt64:free.obj
- 0001:00012b30       __maposerr                 0000000140013b30 f   crtmt64:_maperr.obj
- 0001:00012c50       __errno                    0000000140013c50 f   crtmt64:_maperr.obj
- 0001:00012c70       __thrd_free_reuse          0000000140013c70 f   crtmt64:_thrdnew.obj
- 0001:00012db0       __thrd_new                 0000000140013db0 f   crtmt64:_thrdnew.obj
- 0001:00012e90       __thrd_free                0000000140013e90 f   crtmt64:_thrdnew.obj
- 0001:00012f00       __thrd_detach              0000000140013f00 f   crtmt64:_thrdnew.obj
- 0001:00012f60       __bheapinit                0000000140013f60 f   crtmt64:_bigheap.obj
- 0001:00012f90       __bheapterm                0000000140013f90 f   crtmt64:_bigheap.obj
- 0001:00012fc0       __bheap_aligned_alloc      0000000140013fc0 f   crtmt64:_bigheap.obj
- 0001:00013030       __bheap_aligned_realloc    0000000140014030 f   crtmt64:_bigheap.obj
- 0001:00013130       __bheap_alloc              0000000140014130 f   crtmt64:_bigheap.obj
- 0001:00013140       __bheap_realloc            0000000140014140 f   crtmt64:_bigheap.obj
- 0001:00013150       __bheap_free               0000000140014150 f   crtmt64:_bigheap.obj
- 0001:00013170       __bheap_size               0000000140014170 f   crtmt64:_bigheap.obj
- 0001:000131b0       __bheap_validate           00000001400141b0 f   crtmt64:_bigheap.obj
- 0001:000131f0       __features                 00000001400141f0 f   crtmt64:features.obj
- 0001:000132f0       __clockinit                00000001400142f0 f   crtmt64:clock.obj
- 0001:00013350       clock                      0000000140014350 f   crtmt64:clock.obj
- 0001:000133a0       __ioinit                   00000001400143a0 f   crtmt64:_ioinit.obj
- 0001:00013500       __ioterm                   0000000140014500 f   crtmt64:_ioinit.obj
- 0001:00013590       __new_iotab                0000000140014590 f   crtmt64:_ioinit.obj
- 0001:000137b0       __setargv                  00000001400147b0 f   crtmt64:_setargv.obj
- 0001:00013870       __setenvp                  0000000140014870 f   crtmt64:_setenvp.obj
- 0001:00013970       __wincmdln                 0000000140014970 f   crtmt64:_wincmdln.obj
- 0001:000139c0       exit                       00000001400149c0 f   crtmt64:exit.obj
- 0001:00013a60       wcscspn                    0000000140014a60 f   crtmt64:wcscspn.obj
- 0001:00013ab0       __iswctype                 0000000140014ab0 f   crtmt64:_iswctype.obj
- 0001:00013b30       __wputfield                0000000140014b30 f   crtmt64:_wputfield.obj
- 0001:00014160       __wputtxt                  0000000140015160 f   crtmt64:_wputtxt.obj
- 0001:000143c0       __mtinitlocks              00000001400153c0 f   crtmt64:_mtlock.obj
- 0001:00014410       __mttermlocks              0000000140015410 f   crtmt64:_mtlock.obj
- 0001:000144b0       __mtlock                   00000001400154b0 f   crtmt64:_mtlock.obj
- 0001:00014540       __mtunlock                 0000000140015540 f   crtmt64:_mtlock.obj
- 0001:00014560       __mtlock_stream            0000000140015560 f   crtmt64:_mtlock.obj
- 0001:00014590       __mtunlock_stream          0000000140015590 f   crtmt64:_mtlock.obj
- 0001:000145c0       __mt_fputs                 00000001400155c0 f   crtmt64:fputs.obj
- 0001:00014600       fputs                      0000000140015600 f   crtmt64:fputs.obj
- 0001:00014650       _Exit                      0000000140015650 f   crtmt64:_exit.obj
- 0001:00014660       ignore_handler_s           0000000140015660 f   crtmt64:constraint_handler_s.obj
- 0001:00014670       set_constraint_handler_s   0000000140015670 f   crtmt64:constraint_handler_s.obj
- 0001:000146a0       _crt_constraint            00000001400156a0 f   crtmt64:constraint_handler_s.obj
- 0001:000146d0       _strdup                    00000001400156d0 f   crtmt64:strdup.obj
- 0001:00014730       strdup                     0000000140015730 f   crtmt64:strdup.obj
- 0001:00014740       __get_c_locale             0000000140015740 f   crtmt64:_clocale.obj
- 0001:00014880       signal                     0000000140015880 f   crtmt64:signal.obj
- 0001:00014990       __getmem                   0000000140015990 f   crtmt64:_getmem.obj
- 0001:00014a60       __mtx_init                 0000000140015a60 f   crtmt64:_mtxinit.obj
- 0001:00014b00       __mtx_destroy              0000000140015b00 f   crtmt64:_mtxinit.obj
- 0001:00014bb0       calloc                     0000000140015bb0 f   crtmt64:calloc.obj
- 0001:00014c10       __tss_user_destructors     0000000140015c10 f   crtmt64:_tss_dtors.obj
- 0001:00014f40       __mtx_lock                 0000000140015f40 f   crtmt64:_mtxlock.obj
- 0001:00014f50       __mtx_timedlock            0000000140015f50 f   crtmt64:_mtxlock.obj
- 0001:00014f70       __mtx_trylock              0000000140015f70 f   crtmt64:_mtxlock.obj
- 0001:00014f80       __mtx_unlock               0000000140015f80 f   crtmt64:_mtxlock.obj
- 0001:00014f90       __set_default_crt_heap_size 0000000140015f90 f   crtmt64:_dflheap.obj
- 0001:00014fa0       __ioexport                 0000000140015fa0 f   crtmt64:_ioxfer.obj
- 0001:000150b0       __ioimport                 00000001400160b0 f   crtmt64:_ioxfer.obj
- 0001:00015190       __btowc                    0000000140016190 f   crtmt64:_btowc.obj
- 0001:000151e0       __wlitob                   00000001400161e0 f   crtmt64:_wlitob.obj
- 0001:00015360       __fptestl                  0000000140016360 f   crtmt64:_fptestl.obj
- 0001:00015370       __wldtob                   0000000140016370 f   crtmt64:_wldtob.obj
- 0001:00015b00       wmemchr                    0000000140016b00 f   crtmt64:wmemchr.obj
- 0001:00015b20       __wputstr                  0000000140016b20 f   crtmt64:_wputstr.obj
- 0001:00015c90       __mt_fputc                 0000000140016c90 f   crtmt64:fputc.obj
- 0001:00015d00       fputc                      0000000140016d00 f   crtmt64:fputc.obj
- 0001:00015d30       __buf_stream               0000000140016d30 f   crtmt64:_stbuf.obj
- 0001:00015de0       __unbuf_stream             0000000140016de0 f   crtmt64:_stbuf.obj
- 0001:00015e40       __strerror                 0000000140016e40 f   crtmt64:_strerror.obj
- 0001:00016140       __oshnd_wait               0000000140017140 f   crtmt64:_thrdwait.obj
- 0001:00016170       __thrd_wait                0000000140017170 f   crtmt64:_thrdwait.obj
- 0001:00016180       __thrd_timedwait           0000000140017180 f   crtmt64:_thrdwait.obj
- 0001:00016190       __thrd_sleep               0000000140017190 f   crtmt64:_thrdwait.obj
- 0001:000161a0       __tss_init                 00000001400171a0 f   crtmt64:_tss.obj
- 0001:000161d0       __tss_free                 00000001400171d0 f   crtmt64:_tss.obj
- 0001:000161f0       __tss_get                  00000001400171f0 f   crtmt64:_tss.obj
- 0001:00016200       __tss_set                  0000000140017200 f   crtmt64:_tss.obj
- 0001:00016220       __thrd_key_create          0000000140017220 f   crtmt64:_thrdkey.obj
- 0001:000162a0       __thrd_key_destroy         00000001400172a0 f   crtmt64:_thrdkey.obj
- 0001:00016310       thrd_current               0000000140017310 f   crtmt64:thrd_current.obj
- 0001:00016380       thrd_equal                 0000000140017380 f   crtmt64:thrd_equal.obj
- 0001:000163a0       __mbtowc                   00000001400173a0 f   crtmt64:_mbtowc.obj
- 0001:000166d0       __fptest                   00000001400176d0 f   crtmt64:_fptest.obj
- 0001:00016750       __fpunscalel               0000000140017750 f   crtmt64:_fpunscalel.obj
- 0001:00016760       __fpscalel                 0000000140017760 f   crtmt64:_fpscalel.obj
- 0001:00016770       __wgenld                   0000000140017770 f   crtmt64:_wgenld.obj
- 0001:00016c20       __fpgetwl                  0000000140017c20 f   crtmt64:_fpxprecl.obj
- 0001:00016cb0       __fpsetwl                  0000000140017cb0 f   crtmt64:_fpxprecl.obj
- 0001:00016de0       __fpaddhl                  0000000140017de0 f   crtmt64:_fpxprecl.obj
- 0001:000171d0       __fpmulhl                  00000001400181d0 f   crtmt64:_fpxprecl.obj
- 0001:000173c0       __fpsetnl                  00000001400183c0 f   crtmt64:_fpxprecl.obj
- 0001:000173e0       __fpmovxl                  00000001400183e0 f   crtmt64:_fpxprecl.obj
- 0001:00017400       __fpaddxl                  0000000140018400 f   crtmt64:_fpxprecl.obj
- 0001:00017460       __fpsubxl                  0000000140018460 f   crtmt64:_fpxprecl.obj
- 0001:000174d0       __fpldexpxl                00000001400184d0 f   crtmt64:_fpxprecl.obj
- 0001:00017530       __fpmulxl                  0000000140018530 f   crtmt64:_fpxprecl.obj
- 0001:00017630       __fpinvxl                  0000000140018630 f   crtmt64:_fpxprecl.obj
- 0001:00017780       __fflush                   0000000140018780 f   crtmt64:_fflush.obj
- 0001:000178b0       __fwrite                   00000001400188b0 f   crtmt64:_fwrite.obj
- 0001:000179c0       _fileno                    00000001400189c0 f   crtmt64:fileno.obj
- 0001:000179d0       _isatty                    00000001400189d0 f   crtmt64:isatty.obj
- 0001:00017a00       ___mbtowc                  0000000140018a00 f   crtmt64:__mbtowc.obj
- 0001:00017ab0       __fpunscale                0000000140018ab0 f   crtmt64:_fpunscale.obj
- 0001:00017b50       __fpscale                  0000000140018b50 f   crtmt64:_fpscale.obj
- 0001:00017d50       __fpintl                   0000000140018d50 f   crtmt64:_fpintl.obj
- 0001:00017d60       __feraise                  0000000140018d60 f   crtmt64:_feraise.obj
- 0001:00017da0       ldexpl                     0000000140018da0 f   crtmt64:ldexpl.obj
- 0001:000183c0       __mt_write                 00000001400193c0 f   crtmt64:write.obj
- 0001:00018590       _write                     0000000140019590 f   crtmt64:write.obj
- 0001:000186b0       __init_closeall            00000001400196b0 f   crtmt64:fclose.obj
- 0001:00018850       fclose                     0000000140019850 f   crtmt64:fclose.obj
- 0001:000188a0       __fpnorm                   00000001400198a0 f   crtmt64:_fpnorm.obj
- 0001:00018a10       __fpint                    0000000140019a10 f   crtmt64:_fpint.obj
- 0001:00018b60       feraiseexcept              0000000140019b60 f   crtmt64:feraiseexcept.obj
- 0001:00018bd0       _matherr                   0000000140019bd0 f   crtmt64:_matherr.obj
- 0001:00018c40       __new_osfhnd               0000000140019c40 f   crtmt64:_osfinfo.obj
- 0001:00018d40       __free_osfhnd              0000000140019d40 f   crtmt64:_osfinfo.obj
- 0001:00018df0       __set_osfhnd               0000000140019df0 f   crtmt64:_osfinfo.obj
- 0001:00018e90       __get_osfhnd               0000000140019e90 f   crtmt64:_osfinfo.obj
- 0001:00018eb0       __is_unicode_osfhnd        0000000140019eb0 f   crtmt64:_osfinfo.obj
- 0001:00018ef0       __is_console_osfhnd        0000000140019ef0 f   crtmt64:_osfinfo.obj
- 0001:00018f40       _get_osfhandle             0000000140019f40 f   crtmt64:_osfinfo.obj
- 0001:00018fa0       _open_osfhandle            0000000140019fa0 f   crtmt64:_osfinfo.obj
- 0001:000190d0       __lock_osfhnd              000000014001a0d0 f   crtmt64:_osfinfo.obj
- 0001:00019100       __unlock_osfhnd            000000014001a100 f   crtmt64:_osfinfo.obj
- 0001:00019130       __cp_to_cp                 000000014001a130 f   crtmt64:_cp2cp.obj
- 0001:00019240       __mt_lseek64               000000014001a240 f   crtmt64:lseek64.obj
- 0001:000192d0       _lseek64                   000000014001a2d0 f   crtmt64:lseek64.obj
- 0001:00019340       _Atexit                    000000014001a340 f   crtmt64:_atexit.obj
- 0001:00019370       __mt_close                 000000014001a370 f   crtmt64:close.obj
- 0001:00019410       _close                     000000014001a410 f   crtmt64:close.obj
- 0001:00019470       remove                     000000014001a470 f   crtmt64:remove.obj
- 0001:00019480       abort                      000000014001a480 f   crtmt64:abort.obj
- 0001:000194a0       _unlink                    000000014001a4a0 f   crtmt64:unlink.obj
- 0001:000194d0       raise                      000000014001a4d0 f   crtmt64:raise.obj
+ 0001:00004040       Rich_GetCaretPos           0000000140005040 f   rich.obj
+ 0001:000040cc       Rich_GetModified           00000001400050cc f   rich.obj
+ 0001:000040f8       Rich_CanUndo               00000001400050f8 f   rich.obj
+ 0001:00004124       Rich_CanRedo               0000000140005124 f   rich.obj
+ 0001:00004150       Rich_CanPaste              0000000140005150 f   rich.obj
+ 0001:0000417c       Rich_SetModified           000000014000517c f   rich.obj
+ 0001:000041a9       Rich_ConvertCase           00000001400051a9 f   rich.obj
+ 0001:00004284       Rich_ConvertTabsToSpaces   0000000140005284 f   rich.obj
+ 0001:0000430a       Rich_SetBGColor            000000014000530a f   rich.obj
+ 0001:000045cf       Rich_SetFGColor            00000001400055cf f   rich.obj
+ 0001:00004908       Rich_FindNext              0000000140005908 f   rich.obj
+ 0001:000049fa       Rich_TabReplace            00000001400059fa f   rich.obj
+ 0001:00004abb       Rich_GotoLine              0000000140005abb f   rich.obj
+ 0001:00004b23       Rich_FindReplaceText       0000000140005b23 f   rich.obj
+ 0001:00004dd1       Rich_GetLineCount          0000000140005dd1 f   rich.obj
+ 0001:00004dfd       Rich_GetCrtLine            0000000140005dfd f   rich.obj
+ 0001:00004e46       Rich_GetSelText            0000000140005e46 f   rich.obj
+ 0001:00004edd       Rich_GetSelLen             0000000140005edd f   rich.obj
+ 0001:00004f11       Rich_Print                 0000000140005f11 f   rich.obj
+ 0001:00005cd9       Rich_NewRichedit           0000000140006cd9 f   rich.obj
+ 0001:000060dc       Rich_Streamin              00000001400070dc f   rich.obj
+ 0001:00006263       Rich_SelStreamin           0000000140007263 f   rich.obj
+ 0001:000063d5       Rich_Streamout             00000001400073d5 f   rich.obj
+ 0001:00006545       Rich_SelStreamout          0000000140007545 f   rich.obj
+ 0001:000066b4       Rich_SetFontNoCF           00000001400076b4 f   rich.obj
+ 0001:000066e2       Rich_SetFont               00000001400076e2 f   rich.obj
+ 0001:00006903       Rich_ToggleSelBar          0000000140007903 f   rich.obj
+ 0001:00006b0a       Rich_WordWrap              0000000140007b0a f   rich.obj
+ 0001:00006b64       Rich_SaveSelandcurpos      0000000140007b64 f   rich.obj
+ 0001:00006bcc       Rich_RestoreSelandcurpos   0000000140007bcc f   rich.obj
+ 0001:00006c34       Rich_CreateShowCaret       0000000140007c34 f   rich.obj
+ 0001:00006c78       Rich_GetFontHeight         0000000140007c78 f   rich.obj
+ 0001:00006d3a       Rich_ClearText             0000000140007d3a f   rich.obj
+ 0001:00006f90       SB_MakeStatusBar           0000000140007f90 f   sbar.obj
+ 0001:00007074       SB_MenuHelp                0000000140008074 f   sbar.obj
+ 0001:0000712e       SB_StatusResizePanels      000000014000812e f   sbar.obj
+ 0001:00007225       SB_StatusSetSimple         0000000140008225 f   sbar.obj
+ 0001:00007252       SB_StatusSetText           0000000140008252 f   sbar.obj
+ 0001:00007290       Tab_NewTab                 0000000140008290 f   tabs.obj
+ 0001:000073f3       Tab_NewTabPage             00000001400083f3 f   tabs.obj
+ 0001:0000744c       Tab_DeletePage             000000014000844c f   tabs.obj
+ 0001:0000747b       Tab_GetCurSel              000000014000847b f   tabs.obj
+ 0001:000074a7       Tab_SetCurSel              00000001400084a7 f   tabs.obj
+ 0001:000074d6       Tab_GetCurFocus            00000001400084d6 f   tabs.obj
+ 0001:00007502       Tab_SetCurFocus            0000000140008502 f   tabs.obj
+ 0001:00007531       Tab_GetCount               0000000140008531 f   tabs.obj
+ 0001:0000755d       Tab_SetText                000000014000855d f   tabs.obj
+ 0001:000075b6       Tab_SetPadding             00000001400085b6 f   tabs.obj
+ 0001:00007601       Tab_SetImageList           0000000140008601 f   tabs.obj
+ 0001:0000762f       Tab_SetImg                 000000014000862f f   tabs.obj
+ 0001:00007680       WinMain                    0000000140008680 f   textedit.obj
+ 0001:00007ea0       TabSubclassProc            0000000140008ea0 f   textedit.obj
+ 0001:00007f86       RichSubclassProc           0000000140008f86 f   textedit.obj
+ 0001:000081fb       OutwSubclassProc           00000001400091fb f   textedit.obj
+ 0001:000083cc       DLG_AboutDlgProc           00000001400093cc f   textedit.obj
+ 0001:0000846a       DLG_TabsDlgProc            000000014000946a f   textedit.obj
+ 0001:000085b4       DLG_FindDlgProc            00000001400095b4 f   textedit.obj
+ 0001:00008953       DLG_GotoDlgProc            0000000140009953 f   textedit.obj
+ 0001:00008b49       DLG_EXTToolDlgProc         0000000140009b49 f   textedit.obj
+ 0001:00008fac       DLG_OUTviewDlgProc         0000000140009fac f   textedit.obj
+ 0001:000091dd       WndProc                    000000014000a1dd f   textedit.obj
+ 0001:00009423       UpdateMenuStatus           000000014000a423 f   textedit.obj
+ 0001:000098bd       DLG_OpenDlg                000000014000a8bd f   textedit.obj
+ 0001:00009b0f       DLG_SaveDlg                000000014000ab0f f   textedit.obj
+ 0001:00009f03       STR_StreamInProc           000000014000af03 f   textedit.obj
+ 0001:0000aa54       STR_StreamOutProc          000000014000ba54 f   textedit.obj
+ 0001:0000b2c6       Prompt_to_save             000000014000c2c6 f   textedit.obj
+ 0001:0000b388       UpdateTitlebar             000000014000c388 f   textedit.obj
+ 0001:0000b3ed       Menu_WipeClipboard         000000014000c3ed f   textedit.obj
+ 0001:0000b42a       Menu_NewInstance           000000014000c42a f   textedit.obj
+ 0001:0000b474       Menu_MergeFile             000000014000c474 f   textedit.obj
+ 0001:0000b62f       Menu_SaveSelection         000000014000c62f f   textedit.obj
+ 0001:0000b6b6       CvtTabsProc                000000014000c6b6 f   textedit.obj
+ 0001:0000b761       ExpandMacro                000000014000c761 f   textedit.obj
+ 0001:0000ba25       DLG_OutputWnd              000000014000ca25 f   textedit.obj
+ 0001:0000ba5d       Menu_HexView               000000014000ca5d f   textedit.obj
+ 0001:0000bb5d       DLG_HEXViewDlgProc         000000014000cb5d f   textedit.obj
+ 0001:0000bd7f       Menu_RefreshFromDisk       000000014000cd7f f   textedit.obj
+ 0001:0000c026       ConvertTabsToSpaces        000000014000d026 f   textedit.obj
+ 0001:0000c153       EnableMenus                000000014000d153 f   textedit.obj
+ 0001:0000c6ce       Menu_Save                  000000014000d6ce f   textedit.obj
+ 0001:0000ca49       Menu_Saveas                000000014000da49 f   textedit.obj
+ 0001:0000cb01       Menu_New                   000000014000db01 f   textedit.obj
+ 0001:0000ce4a       Menu_ToggleMargin          000000014000de4a f   textedit.obj
+ 0001:0000d39f       Menu_Find                  000000014000e39f f   textedit.obj
+ 0001:0000d555       Menu_ConvertTabs           000000014000e555 f   textedit.obj
+ 0001:0000d62f       Menu_SetFont               000000014000e62f f   textedit.obj
+ 0001:0000d878       Menu_Print                 000000014000e878 f   textedit.obj
+ 0001:0000da0c       Menu_SetFGColor            000000014000ea0c f   textedit.obj
+ 0001:0000dc1e       Menu_SetBGColor            000000014000ec1e f   textedit.obj
+ 0001:0000dcf2       UpdateEncodingMenus        000000014000ecf2 f   textedit.obj
+ 0001:0000dd9c       TD_UpdateTabDataEntry      000000014000ed9c f   textedit.obj
+ 0001:0000e104       TD_RebuildTabData          000000014000f104 f   textedit.obj
+ 0001:0000e22e       UpdateCaretPos             000000014000f22e f   textedit.obj
+ 0001:0000e2c2       Menu_WWrap                 000000014000f2c2 f   textedit.obj
+ 0001:0000e426       UpdateModifiedStatus       000000014000f426 f   textedit.obj
+ 0001:0000e54a       UpdateEncodingStatus       000000014000f54a f   textedit.obj
+ 0001:0000e6a2       Menu_Open                  000000014000f6a2 f   textedit.obj
+ 0001:0000e7f3       Menu_Quit                  000000014000f7f3 f   textedit.obj
+ 0001:0000e822       QuitSaveCheck              000000014000f822 f   textedit.obj
+ 0001:0000e8d3       RemoveTab                  000000014000f8d3 f   textedit.obj
+ 0001:0000eabb       MainWND_OnDropFiles        000000014000fabb f   textedit.obj
+ 0001:0000eda4       MainWND_OnNotify           000000014000fda4 f   textedit.obj
+ 0001:0000efa3       MainWND_OnCreate           000000014000ffa3 f   textedit.obj
+ 0001:0000f1b3       MainWND_OnSize             00000001400101b3 f   textedit.obj
+ 0001:0000f2ef       MainWND_OnInitMenuPopup    00000001400102ef f   textedit.obj
+ 0001:0000f35f       MainWND_OnCommand          000000014001035f f   textedit.obj
+ 0001:0000fc54       OpenFileListFromCMDL       0000000140010c54 f   textedit.obj
+ 0001:0000ff4d       OpenFileListFromOFD        0000000140010f4d f   textedit.obj
+ 0001:00010336       CycleTabs                  0000000140011336 f   textedit.obj
+ 0001:000104e1       InitImgList                00000001400114e1 f   textedit.obj
+ 0001:000105aa       Menu_Ontop                 00000001400115aa f   textedit.obj
+ 0001:00010702       MainWND_OnCopyData         0000000140011702 f   textedit.obj
+ 0001:00010e53       RunFileDlg                 0000000140011e53     shell32x:shell32.dll
+ 0001:00010e90       _vsnwprintf                0000000140011e90 f   crtmt64:vsnwprintf.obj
+ 0001:00010ef0       memcmp                     0000000140011ef0 f   crtmt64:memcmp.obj
+ 0001:00010fc0       __C_specific_handler       0000000140011fc0 f   crtmt64:_ehandler.obj
+ 0001:00011140       memset                     0000000140012140 f   crtmt64:memset.obj
+ 0001:00011230       ldiv                       0000000140012230 f   crtmt64:ldiv.obj
+ 0001:00011250       isprint                    0000000140012250 f   crtmt64:isprint.obj
+ 0001:00011280       memcpy                     0000000140012280 f   crtmt64:memcpy.obj
+ 0001:00011280       memmove                    0000000140012280     crtmt64:memcpy.obj
+ 0001:000115e0       _beginthread               00000001400125e0 f   crtmt64:thread.obj
+ 0001:000116a0       _endthread                 00000001400126a0 f   crtmt64:thread.obj
+ 0001:00011700       WinMainCRTStartup          0000000140012700 f   crtmt64:_wincrt0.obj
+ 0001:00011830       __wprintf                  0000000140012830 f   crtmt64:_wprintf.obj
+ 0001:00011bb0       __crt_abort                0000000140012bb0 f   crtmt64:_crtabort.obj
+ 0001:00011d00       __mtinit                   0000000140012d00 f   crtmt64:_tidtable.obj
+ 0001:00011d70       __mtterm                   0000000140012d70 f   crtmt64:_tidtable.obj
+ 0001:00011de0       __init_mtd                 0000000140012de0 f   crtmt64:_tidtable.obj
+ 0001:00011e70       __get_mtd                  0000000140012e70 f   crtmt64:_tidtable.obj
+ 0001:00011ef0       __free_mtd                 0000000140012ef0 f   crtmt64:_tidtable.obj
+ 0001:00011fe0       __xcptfilter               0000000140012fe0 f   crtmt64:_xcptfilter.obj
+ 0001:00012340       __sheap_alloc              0000000140013340 f   crtmt64:malloc.obj
+ 0001:000126c0       malloc                     00000001400136c0 f   crtmt64:malloc.obj
+ 0001:00012760       __sheap_free               0000000140013760 f   crtmt64:free.obj
+ 0001:00012b00       free                       0000000140013b00 f   crtmt64:free.obj
+ 0001:00012b80       __maposerr                 0000000140013b80 f   crtmt64:_maperr.obj
+ 0001:00012ca0       __errno                    0000000140013ca0 f   crtmt64:_maperr.obj
+ 0001:00012cc0       __thrd_free_reuse          0000000140013cc0 f   crtmt64:_thrdnew.obj
+ 0001:00012e00       __thrd_new                 0000000140013e00 f   crtmt64:_thrdnew.obj
+ 0001:00012ee0       __thrd_free                0000000140013ee0 f   crtmt64:_thrdnew.obj
+ 0001:00012f50       __thrd_detach              0000000140013f50 f   crtmt64:_thrdnew.obj
+ 0001:00012fb0       __bheapinit                0000000140013fb0 f   crtmt64:_bigheap.obj
+ 0001:00012fe0       __bheapterm                0000000140013fe0 f   crtmt64:_bigheap.obj
+ 0001:00013010       __bheap_aligned_alloc      0000000140014010 f   crtmt64:_bigheap.obj
+ 0001:00013080       __bheap_aligned_realloc    0000000140014080 f   crtmt64:_bigheap.obj
+ 0001:00013180       __bheap_alloc              0000000140014180 f   crtmt64:_bigheap.obj
+ 0001:00013190       __bheap_realloc            0000000140014190 f   crtmt64:_bigheap.obj
+ 0001:000131a0       __bheap_free               00000001400141a0 f   crtmt64:_bigheap.obj
+ 0001:000131c0       __bheap_size               00000001400141c0 f   crtmt64:_bigheap.obj
+ 0001:00013200       __bheap_validate           0000000140014200 f   crtmt64:_bigheap.obj
+ 0001:00013240       __features                 0000000140014240 f   crtmt64:features.obj
+ 0001:00013340       __clockinit                0000000140014340 f   crtmt64:clock.obj
+ 0001:000133a0       clock                      00000001400143a0 f   crtmt64:clock.obj
+ 0001:000133f0       __ioinit                   00000001400143f0 f   crtmt64:_ioinit.obj
+ 0001:00013550       __ioterm                   0000000140014550 f   crtmt64:_ioinit.obj
+ 0001:000135e0       __new_iotab                00000001400145e0 f   crtmt64:_ioinit.obj
+ 0001:00013800       __setargv                  0000000140014800 f   crtmt64:_setargv.obj
+ 0001:000138c0       __setenvp                  00000001400148c0 f   crtmt64:_setenvp.obj
+ 0001:000139c0       __wincmdln                 00000001400149c0 f   crtmt64:_wincmdln.obj
+ 0001:00013a10       exit                       0000000140014a10 f   crtmt64:exit.obj
+ 0001:00013ab0       wcscspn                    0000000140014ab0 f   crtmt64:wcscspn.obj
+ 0001:00013b00       __iswctype                 0000000140014b00 f   crtmt64:_iswctype.obj
+ 0001:00013b80       __wputfield                0000000140014b80 f   crtmt64:_wputfield.obj
+ 0001:000141b0       __wputtxt                  00000001400151b0 f   crtmt64:_wputtxt.obj
+ 0001:00014410       __mtinitlocks              0000000140015410 f   crtmt64:_mtlock.obj
+ 0001:00014460       __mttermlocks              0000000140015460 f   crtmt64:_mtlock.obj
+ 0001:00014500       __mtlock                   0000000140015500 f   crtmt64:_mtlock.obj
+ 0001:00014590       __mtunlock                 0000000140015590 f   crtmt64:_mtlock.obj
+ 0001:000145b0       __mtlock_stream            00000001400155b0 f   crtmt64:_mtlock.obj
+ 0001:000145e0       __mtunlock_stream          00000001400155e0 f   crtmt64:_mtlock.obj
+ 0001:00014610       __mt_fputs                 0000000140015610 f   crtmt64:fputs.obj
+ 0001:00014650       fputs                      0000000140015650 f   crtmt64:fputs.obj
+ 0001:000146a0       _Exit                      00000001400156a0 f   crtmt64:_exit.obj
+ 0001:000146b0       ignore_handler_s           00000001400156b0 f   crtmt64:constraint_handler_s.obj
+ 0001:000146c0       set_constraint_handler_s   00000001400156c0 f   crtmt64:constraint_handler_s.obj
+ 0001:000146f0       _crt_constraint            00000001400156f0 f   crtmt64:constraint_handler_s.obj
+ 0001:00014720       _strdup                    0000000140015720 f   crtmt64:strdup.obj
+ 0001:00014780       strdup                     0000000140015780 f   crtmt64:strdup.obj
+ 0001:00014790       __get_c_locale             0000000140015790 f   crtmt64:_clocale.obj
+ 0001:000148d0       signal                     00000001400158d0 f   crtmt64:signal.obj
+ 0001:000149e0       __getmem                   00000001400159e0 f   crtmt64:_getmem.obj
+ 0001:00014ab0       __mtx_init                 0000000140015ab0 f   crtmt64:_mtxinit.obj
+ 0001:00014b50       __mtx_destroy              0000000140015b50 f   crtmt64:_mtxinit.obj
+ 0001:00014c00       calloc                     0000000140015c00 f   crtmt64:calloc.obj
+ 0001:00014c60       __tss_user_destructors     0000000140015c60 f   crtmt64:_tss_dtors.obj
+ 0001:00014f90       __mtx_lock                 0000000140015f90 f   crtmt64:_mtxlock.obj
+ 0001:00014fa0       __mtx_timedlock            0000000140015fa0 f   crtmt64:_mtxlock.obj
+ 0001:00014fc0       __mtx_trylock              0000000140015fc0 f   crtmt64:_mtxlock.obj
+ 0001:00014fd0       __mtx_unlock               0000000140015fd0 f   crtmt64:_mtxlock.obj
+ 0001:00014fe0       __set_default_crt_heap_size 0000000140015fe0 f   crtmt64:_dflheap.obj
+ 0001:00014ff0       __ioexport                 0000000140015ff0 f   crtmt64:_ioxfer.obj
+ 0001:00015100       __ioimport                 0000000140016100 f   crtmt64:_ioxfer.obj
+ 0001:000151e0       __btowc                    00000001400161e0 f   crtmt64:_btowc.obj
+ 0001:00015230       __wlitob                   0000000140016230 f   crtmt64:_wlitob.obj
+ 0001:000153b0       __fptestl                  00000001400163b0 f   crtmt64:_fptestl.obj
+ 0001:000153c0       __wldtob                   00000001400163c0 f   crtmt64:_wldtob.obj
+ 0001:00015b50       wmemchr                    0000000140016b50 f   crtmt64:wmemchr.obj
+ 0001:00015b70       __wputstr                  0000000140016b70 f   crtmt64:_wputstr.obj
+ 0001:00015ce0       __mt_fputc                 0000000140016ce0 f   crtmt64:fputc.obj
+ 0001:00015d50       fputc                      0000000140016d50 f   crtmt64:fputc.obj
+ 0001:00015d80       __buf_stream               0000000140016d80 f   crtmt64:_stbuf.obj
+ 0001:00015e30       __unbuf_stream             0000000140016e30 f   crtmt64:_stbuf.obj
+ 0001:00015e90       __strerror                 0000000140016e90 f   crtmt64:_strerror.obj
+ 0001:00016190       __oshnd_wait               0000000140017190 f   crtmt64:_thrdwait.obj
+ 0001:000161c0       __thrd_wait                00000001400171c0 f   crtmt64:_thrdwait.obj
+ 0001:000161d0       __thrd_timedwait           00000001400171d0 f   crtmt64:_thrdwait.obj
+ 0001:000161e0       __thrd_sleep               00000001400171e0 f   crtmt64:_thrdwait.obj
+ 0001:000161f0       __tss_init                 00000001400171f0 f   crtmt64:_tss.obj
+ 0001:00016220       __tss_free                 0000000140017220 f   crtmt64:_tss.obj
+ 0001:00016240       __tss_get                  0000000140017240 f   crtmt64:_tss.obj
+ 0001:00016250       __tss_set                  0000000140017250 f   crtmt64:_tss.obj
+ 0001:00016270       __thrd_key_create          0000000140017270 f   crtmt64:_thrdkey.obj
+ 0001:000162f0       __thrd_key_destroy         00000001400172f0 f   crtmt64:_thrdkey.obj
+ 0001:00016360       thrd_current               0000000140017360 f   crtmt64:thrd_current.obj
+ 0001:000163d0       thrd_equal                 00000001400173d0 f   crtmt64:thrd_equal.obj
+ 0001:000163f0       __mbtowc                   00000001400173f0 f   crtmt64:_mbtowc.obj
+ 0001:00016720       __fptest                   0000000140017720 f   crtmt64:_fptest.obj
+ 0001:000167a0       __fpunscalel               00000001400177a0 f   crtmt64:_fpunscalel.obj
+ 0001:000167b0       __fpscalel                 00000001400177b0 f   crtmt64:_fpscalel.obj
+ 0001:000167c0       __wgenld                   00000001400177c0 f   crtmt64:_wgenld.obj
+ 0001:00016c70       __fpgetwl                  0000000140017c70 f   crtmt64:_fpxprecl.obj
+ 0001:00016d00       __fpsetwl                  0000000140017d00 f   crtmt64:_fpxprecl.obj
+ 0001:00016e30       __fpaddhl                  0000000140017e30 f   crtmt64:_fpxprecl.obj
+ 0001:00017220       __fpmulhl                  0000000140018220 f   crtmt64:_fpxprecl.obj
+ 0001:00017410       __fpsetnl                  0000000140018410 f   crtmt64:_fpxprecl.obj
+ 0001:00017430       __fpmovxl                  0000000140018430 f   crtmt64:_fpxprecl.obj
+ 0001:00017450       __fpaddxl                  0000000140018450 f   crtmt64:_fpxprecl.obj
+ 0001:000174b0       __fpsubxl                  00000001400184b0 f   crtmt64:_fpxprecl.obj
+ 0001:00017520       __fpldexpxl                0000000140018520 f   crtmt64:_fpxprecl.obj
+ 0001:00017580       __fpmulxl                  0000000140018580 f   crtmt64:_fpxprecl.obj
+ 0001:00017680       __fpinvxl                  0000000140018680 f   crtmt64:_fpxprecl.obj
+ 0001:000177d0       __fflush                   00000001400187d0 f   crtmt64:_fflush.obj
+ 0001:00017900       __fwrite                   0000000140018900 f   crtmt64:_fwrite.obj
+ 0001:00017a10       _fileno                    0000000140018a10 f   crtmt64:fileno.obj
+ 0001:00017a20       _isatty                    0000000140018a20 f   crtmt64:isatty.obj
+ 0001:00017a50       ___mbtowc                  0000000140018a50 f   crtmt64:__mbtowc.obj
+ 0001:00017b00       __fpunscale                0000000140018b00 f   crtmt64:_fpunscale.obj
+ 0001:00017ba0       __fpscale                  0000000140018ba0 f   crtmt64:_fpscale.obj
+ 0001:00017da0       __fpintl                   0000000140018da0 f   crtmt64:_fpintl.obj
+ 0001:00017db0       __feraise                  0000000140018db0 f   crtmt64:_feraise.obj
+ 0001:00017df0       ldexpl                     0000000140018df0 f   crtmt64:ldexpl.obj
+ 0001:00018410       __mt_write                 0000000140019410 f   crtmt64:write.obj
+ 0001:000185e0       _write                     00000001400195e0 f   crtmt64:write.obj
+ 0001:00018700       __init_closeall            0000000140019700 f   crtmt64:fclose.obj
+ 0001:000188a0       fclose                     00000001400198a0 f   crtmt64:fclose.obj
+ 0001:000188f0       __fpnorm                   00000001400198f0 f   crtmt64:_fpnorm.obj
+ 0001:00018a60       __fpint                    0000000140019a60 f   crtmt64:_fpint.obj
+ 0001:00018bb0       feraiseexcept              0000000140019bb0 f   crtmt64:feraiseexcept.obj
+ 0001:00018c20       _matherr                   0000000140019c20 f   crtmt64:_matherr.obj
+ 0001:00018c90       __new_osfhnd               0000000140019c90 f   crtmt64:_osfinfo.obj
+ 0001:00018d90       __free_osfhnd              0000000140019d90 f   crtmt64:_osfinfo.obj
+ 0001:00018e40       __set_osfhnd               0000000140019e40 f   crtmt64:_osfinfo.obj
+ 0001:00018ee0       __get_osfhnd               0000000140019ee0 f   crtmt64:_osfinfo.obj
+ 0001:00018f00       __is_unicode_osfhnd        0000000140019f00 f   crtmt64:_osfinfo.obj
+ 0001:00018f40       __is_console_osfhnd        0000000140019f40 f   crtmt64:_osfinfo.obj
+ 0001:00018f90       _get_osfhandle             0000000140019f90 f   crtmt64:_osfinfo.obj
+ 0001:00018ff0       _open_osfhandle            0000000140019ff0 f   crtmt64:_osfinfo.obj
+ 0001:00019120       __lock_osfhnd              000000014001a120 f   crtmt64:_osfinfo.obj
+ 0001:00019150       __unlock_osfhnd            000000014001a150 f   crtmt64:_osfinfo.obj
+ 0001:00019180       __cp_to_cp                 000000014001a180 f   crtmt64:_cp2cp.obj
+ 0001:00019290       __mt_lseek64               000000014001a290 f   crtmt64:lseek64.obj
+ 0001:00019320       _lseek64                   000000014001a320 f   crtmt64:lseek64.obj
+ 0001:00019390       _Atexit                    000000014001a390 f   crtmt64:_atexit.obj
+ 0001:000193c0       __mt_close                 000000014001a3c0 f   crtmt64:close.obj
+ 0001:00019460       _close                     000000014001a460 f   crtmt64:close.obj
+ 0001:000194c0       remove                     000000014001a4c0 f   crtmt64:remove.obj
+ 0001:000194d0       abort                      000000014001a4d0 f   crtmt64:abort.obj
+ 0001:000194f0       _unlink                    000000014001a4f0 f   crtmt64:unlink.obj
+ 0001:00019520       raise                      000000014001a520 f   crtmt64:raise.obj
  0003:00001090       Alphabet                   000000014001d090     misc.obj
- 0003:000041f0       __c_times                  00000001400201f0     crtmt64:_tinfo.obj
- 0003:000043c0       __inf                      00000001400203c0     crtmt64:_values.obj
- 0003:000043c8       __nan                      00000001400203c8     crtmt64:_values.obj
- 0003:000043d0       __eps                      00000001400203d0     crtmt64:_values.obj
- 0003:000043d8       __rteps                    00000001400203d8     crtmt64:_values.obj
- 0003:000043e0       __xbig                     00000001400203e0     crtmt64:_values.obj
- 0003:000043e8       __zero                     00000001400203e8     crtmt64:_values.obj
- 0003:000043f0       __llongmax                 00000001400203f0     crtmt64:_values.obj
- 0003:00004400       __negmask                  0000000140020400     crtmt64:_values.obj
- 0003:00004410       __absmask                  0000000140020410     crtmt64:_values.obj
- 0003:00004440       __infl                     0000000140020440     crtmt64:_lvalues.obj
- 0003:00004448       __nanl                     0000000140020448     crtmt64:_lvalues.obj
- 0003:00004450       __epsl                     0000000140020450     crtmt64:_lvalues.obj
- 0003:00004458       __rtepsl                   0000000140020458     crtmt64:_lvalues.obj
- 0003:00004460       __xbigl                    0000000140020460     crtmt64:_lvalues.obj
- 0003:00004468       __zerol                    0000000140020468     crtmt64:_lvalues.obj
- 0003:000045a8       __xi_a                     00000001400205a8     crtmt64:_initex.obj
- 0003:000045a8       __xi_z                     00000001400205a8     crtmt64:_initex.obj
- 0003:000045a8       __xt_a                     00000001400205a8     crtmt64:_initex.obj
- 0003:000045a8       __xt_z                     00000001400205a8     crtmt64:_initex.obj
+ 0003:00004210       __c_times                  0000000140020210     crtmt64:_tinfo.obj
+ 0003:000043e0       __inf                      00000001400203e0     crtmt64:_values.obj
+ 0003:000043e8       __nan                      00000001400203e8     crtmt64:_values.obj
+ 0003:000043f0       __eps                      00000001400203f0     crtmt64:_values.obj
+ 0003:000043f8       __rteps                    00000001400203f8     crtmt64:_values.obj
+ 0003:00004400       __xbig                     0000000140020400     crtmt64:_values.obj
+ 0003:00004408       __zero                     0000000140020408     crtmt64:_values.obj
+ 0003:00004410       __llongmax                 0000000140020410     crtmt64:_values.obj
+ 0003:00004420       __negmask                  0000000140020420     crtmt64:_values.obj
+ 0003:00004430       __absmask                  0000000140020430     crtmt64:_values.obj
+ 0003:00004460       __infl                     0000000140020460     crtmt64:_lvalues.obj
+ 0003:00004468       __nanl                     0000000140020468     crtmt64:_lvalues.obj
+ 0003:00004470       __epsl                     0000000140020470     crtmt64:_lvalues.obj
+ 0003:00004478       __rtepsl                   0000000140020478     crtmt64:_lvalues.obj
+ 0003:00004480       __xbigl                    0000000140020480     crtmt64:_lvalues.obj
+ 0003:00004488       __zerol                    0000000140020488     crtmt64:_lvalues.obj
+ 0003:000045c8       __xi_a                     00000001400205c8     crtmt64:_initex.obj
+ 0003:000045c8       __xi_z                     00000001400205c8     crtmt64:_initex.obj
+ 0003:000045c8       __xt_a                     00000001400205c8     crtmt64:_initex.obj
+ 0003:000045c8       __xt_z                     00000001400205c8     crtmt64:_initex.obj
  0004:00000000       UTF_16_BE_BOM              0000000140021000     encoding.obj
  0004:00000008       UTF_16_LE_BOM              0000000140021008     encoding.obj
  0004:00000010       UTF_8_BOM                  0000000140021010     encoding.obj
@@ -675,7 +675,7 @@
  0004:0000eac0       __atfuncs                  000000014002fac0     <common>
  0004:0000ed40       __atcount0                 000000014002fd40     <common>
 
- entry point at        0001:000116b0
+ entry point at        0001:00011700
 
  Static symbols
 
@@ -693,48 +693,48 @@
  0001:000031c2       _StringExHandleOtherFlagsW 00000001400041c2 f   misc.obj
  0001:00003321       StringCchCatW              0000000140004321 f   misc.obj
  0001:0000339e       StringCchPrintfExW         000000014000439e f   misc.obj
- 0001:00003cd6       _StringLengthWorkerW       0000000140004cd6 f   pathutils.obj
- 0001:00003d7a       _StringValidateDestW       0000000140004d7a f   pathutils.obj
- 0001:00003dbd       _StringValidateDestAndLengthW 0000000140004dbd f   pathutils.obj
- 0001:00003e2a       _StringCopyWorkerW         0000000140004e2a f   pathutils.obj
- 0001:00003ef9       StringCchCopyNW            0000000140004ef9 f   pathutils.obj
- 0001:00003fa7       StringCchCatW              0000000140004fa7 f   pathutils.obj
- 0001:00006d8c       _StringValidateDestW       0000000140007d8c f   rich.obj
- 0001:00006dcf       _StringVPrintfWorkerW      0000000140007dcf f   rich.obj
- 0001:00006eda       StringCchPrintfW           0000000140007eda f   rich.obj
- 0001:00010886       _StringLengthWorkerW       0000000140011886 f   textedit.obj
- 0001:0001092a       _StringValidateDestW       000000014001192a f   textedit.obj
- 0001:0001096d       _StringValidateDestAndLengthW 000000014001196d f   textedit.obj
- 0001:000109da       _StringCopyWorkerW         00000001400119da f   textedit.obj
- 0001:00010aa9       _StringVPrintfWorkerW      0000000140011aa9 f   textedit.obj
- 0001:00010bb4       StringCchCopyW             0000000140011bb4 f   textedit.obj
- 0001:00010c36       StringCchCopyNW            0000000140011c36 f   textedit.obj
- 0001:00010ce4       StringCchCatW              0000000140011ce4 f   textedit.obj
- 0001:00010d61       StringCchPrintfW           0000000140011d61 f   textedit.obj
- 0001:00010e10       prout                      0000000140011e10 f   crtmt64:vsnwprintf.obj
- 0001:00011520       _threadstart               0000000140012520 f   crtmt64:thread.obj
- 0001:00011570       _threadstart@filt@1        0000000140012570 f   crtmt64:thread.obj
- 0001:000117c0       WinMainCRTStartup@filt@1   00000001400127c0 f   crtmt64:_wincrt0.obj
- 0001:00012010       grabhunk                   0000000140013010 f   crtmt64:malloc.obj
- 0001:000126f0       malloc@term@1              00000001400136f0 f   crtmt64:malloc.obj
- 0001:00012b10       free@term@1                0000000140013b10 f   crtmt64:free.obj
- 0001:00012cc0       thread_reuse_add           0000000140013cc0 f   crtmt64:_thrdnew.obj
- 0001:00012d30       thread_reuse_remove        0000000140013d30 f   crtmt64:_thrdnew.obj
- 0001:000132b0       scale_count                00000001400142b0 f   crtmt64:clock.obj
- 0001:00013600       parse_cmdline              0000000140014600 f   crtmt64:_setargv.obj
- 0001:00013a40       exit@term@1                0000000140014a40 f   crtmt64:exit.obj
- 0001:00014830       ctrlevent_capture          0000000140015830 f   crtmt64:signal.obj
- 0001:00014d10       lock                       0000000140015d10 f   crtmt64:_mtxlock.obj
- 0001:00014e10       trylock                    0000000140015e10 f   crtmt64:_mtxlock.obj
- 0001:00014ea0       unlock                     0000000140015ea0 f   crtmt64:_mtxlock.obj
- 0001:00017ea0       write_txt_ansi             0000000140018ea0 f   crtmt64:write.obj
- 0001:00018000       write_txt_utf16            0000000140019000 f   crtmt64:write.obj
- 0001:00018180       write_txt_utf8             0000000140019180 f   crtmt64:write.obj
- 0001:00018350       write_bin                  0000000140019350 f   crtmt64:write.obj
- 0001:00018650       _write@term@1              0000000140019650 f   crtmt64:write.obj
- 0001:00018670       closeall                   0000000140019670 f   crtmt64:fclose.obj
- 0001:000186f0       __init_closeall@term@1     00000001400196f0 f   crtmt64:fclose.obj
- 0001:00018710       _mt_fclose                 0000000140019710 f   crtmt64:fclose.obj
- 0001:00018880       fclose@term@1              0000000140019880 f   crtmt64:fclose.obj
- 0001:00018be0       lock_ioinfo                0000000140019be0 f   crtmt64:_osfinfo.obj
- 0001:00018c30       unlock_ioinfo              0000000140019c30 f   crtmt64:_osfinfo.obj
+ 0001:00003cf7       _StringLengthWorkerW       0000000140004cf7 f   pathutils.obj
+ 0001:00003d94       _StringValidateDestW       0000000140004d94 f   pathutils.obj
+ 0001:00003dd7       _StringValidateDestAndLengthW 0000000140004dd7 f   pathutils.obj
+ 0001:00003e44       _StringCopyWorkerW         0000000140004e44 f   pathutils.obj
+ 0001:00003f13       StringCchCopyNW            0000000140004f13 f   pathutils.obj
+ 0001:00003fc1       StringCchCatW              0000000140004fc1 f   pathutils.obj
+ 0001:00006d9c       _StringValidateDestW       0000000140007d9c f   rich.obj
+ 0001:00006ddf       _StringVPrintfWorkerW      0000000140007ddf f   rich.obj
+ 0001:00006eea       StringCchPrintfW           0000000140007eea f   rich.obj
+ 0001:000108dd       _StringLengthWorkerW       00000001400118dd f   textedit.obj
+ 0001:00010981       _StringValidateDestW       0000000140011981 f   textedit.obj
+ 0001:000109c4       _StringValidateDestAndLengthW 00000001400119c4 f   textedit.obj
+ 0001:00010a31       _StringCopyWorkerW         0000000140011a31 f   textedit.obj
+ 0001:00010b00       _StringVPrintfWorkerW      0000000140011b00 f   textedit.obj
+ 0001:00010c0b       StringCchCopyW             0000000140011c0b f   textedit.obj
+ 0001:00010c8d       StringCchCopyNW            0000000140011c8d f   textedit.obj
+ 0001:00010d3b       StringCchCatW              0000000140011d3b f   textedit.obj
+ 0001:00010db8       StringCchPrintfW           0000000140011db8 f   textedit.obj
+ 0001:00010e60       prout                      0000000140011e60 f   crtmt64:vsnwprintf.obj
+ 0001:00011570       _threadstart               0000000140012570 f   crtmt64:thread.obj
+ 0001:000115c0       _threadstart@filt@1        00000001400125c0 f   crtmt64:thread.obj
+ 0001:00011810       WinMainCRTStartup@filt@1   0000000140012810 f   crtmt64:_wincrt0.obj
+ 0001:00012060       grabhunk                   0000000140013060 f   crtmt64:malloc.obj
+ 0001:00012740       malloc@term@1              0000000140013740 f   crtmt64:malloc.obj
+ 0001:00012b60       free@term@1                0000000140013b60 f   crtmt64:free.obj
+ 0001:00012d10       thread_reuse_add           0000000140013d10 f   crtmt64:_thrdnew.obj
+ 0001:00012d80       thread_reuse_remove        0000000140013d80 f   crtmt64:_thrdnew.obj
+ 0001:00013300       scale_count                0000000140014300 f   crtmt64:clock.obj
+ 0001:00013650       parse_cmdline              0000000140014650 f   crtmt64:_setargv.obj
+ 0001:00013a90       exit@term@1                0000000140014a90 f   crtmt64:exit.obj
+ 0001:00014880       ctrlevent_capture          0000000140015880 f   crtmt64:signal.obj
+ 0001:00014d60       lock                       0000000140015d60 f   crtmt64:_mtxlock.obj
+ 0001:00014e60       trylock                    0000000140015e60 f   crtmt64:_mtxlock.obj
+ 0001:00014ef0       unlock                     0000000140015ef0 f   crtmt64:_mtxlock.obj
+ 0001:00017ef0       write_txt_ansi             0000000140018ef0 f   crtmt64:write.obj
+ 0001:00018050       write_txt_utf16            0000000140019050 f   crtmt64:write.obj
+ 0001:000181d0       write_txt_utf8             00000001400191d0 f   crtmt64:write.obj
+ 0001:000183a0       write_bin                  00000001400193a0 f   crtmt64:write.obj
+ 0001:000186a0       _write@term@1              00000001400196a0 f   crtmt64:write.obj
+ 0001:000186c0       closeall                   00000001400196c0 f   crtmt64:fclose.obj
+ 0001:00018740       __init_closeall@term@1     0000000140019740 f   crtmt64:fclose.obj
+ 0001:00018760       _mt_fclose                 0000000140019760 f   crtmt64:fclose.obj
+ 0001:000188d0       fclose@term@1              00000001400198d0 f   crtmt64:fclose.obj
+ 0001:00018c30       lock_ioinfo                0000000140019c30 f   crtmt64:_osfinfo.obj
+ 0001:00018c80       unlock_ioinfo              0000000140019c80 f   crtmt64:_osfinfo.obj

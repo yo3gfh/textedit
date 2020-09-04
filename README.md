@@ -52,7 +52,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 **Features**
 
-* Uses Richedit v4.1 to open/edit/save text in ANSI and UNICODE (UTF8/16/32-LE/BE with/without BOM). You can use Richedit 3.0/2.0 if you want (undef HAVE_MSFTEDIT), but not 1.0 (does not support UNICODE). It works on win7, 8 and 10, should work on xp sp3 too. Please note that  it does not use features specific to latest Richedit versions (7.5 on W8 and 8.5 on W10).
+* Uses Richedit v4.1 to open/edit/save text in ANSI and UNICODE (UTF8/16/32-LE/BE with/without BOM). You can use Richedit 3.0/2.0 if you want (undef HAVE_MSFTEDIT), but not 1.0 (does not support UNICODE). It works on win7, 8 and 10, should work on xp sp3 too. Please note that it does not use any features specific to latest Richedit versions (7.5 on W8 and 8.5 on W10).
 * Multiple file support (tabbed).
 * Execute external programs, optionally capturing console output (you may use it as a crude IDE).
 * View current selection as HEX.
@@ -63,6 +63,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 * open the workspace editor.ppw and you'll have all three projects (textedit, spawn and texeditSH) which you can build all at once. You can also open the individual projects (.ppj) from each project folder.
 * spawn.exe is for executing external tools (masm, for example); texteditSH is a MS Explorer context menu shell extension to open files in TextEdit; the program works without either of these.
+* there is another completely optional "feature", detour_selcolor.dll, which is a API hook dll for GetSysColor, so you can customize text selection ("highlight") in a Richedit control. Starting with v2.0 and up, Richedit does not offer such a possibility anymore :-) so we must resort to such hackery :)). Basically, selection fore/back will be the same from textedit.ini.
 * you can compile all projects as x64/x86, UNICODE/non UNICODE; please note: regardless of build type, the richedit control will be in UNICODE mode, to support the above mentioned file encodings
 * IMPORTANT: build both the app and the extension in the same way (both as UNICODE or ANSI, 32 or 64 bit), otherwise interesting things start to happen :-))
 
