@@ -43,8 +43,7 @@ int _tmain ( int argc, _TCHAR ** argv )
     int                 ArgIdx;
     STARTUPINFO         si;
     PROCESS_INFORMATION pi;
-    DWORD               dwExitCode;
-    BOOL                f;
+    BOOL                res;
 
     if ( argc < 2 )
     {
@@ -54,7 +53,7 @@ int _tmain ( int argc, _TCHAR ** argv )
         return 4;
     }
 
-    ZeroMemory ( szCmdLine, sizeof ( szCmdLine ) );
+    RtlZeroMemory ( szCmdLine, sizeof ( szCmdLine ) );
 
     for ( ArgIdx = 1; ArgIdx < argc; ArgIdx++ )
     {
@@ -62,18 +61,19 @@ int _tmain ( int argc, _TCHAR ** argv )
         lstrcat ( szCmdLine, TEXT(" ") );
     }
 
-    ZeroMemory ( &si, sizeof ( STARTUPINFO ) );
+    RtlZeroMemory ( &si, sizeof ( STARTUPINFO ) );
     si.cb = sizeof ( STARTUPINFO );
-    ZeroMemory ( &pi, sizeof ( PROCESS_INFORMATION ) );
-    dwExitCode = 0;
+    RtlZeroMemory ( &pi, sizeof ( PROCESS_INFORMATION ) );
 
-    f = CreateProcess ( NULL, szCmdLine, NULL, NULL, TRUE, 0, NULL, NULL, &si, &pi );
-    if ( f )
+    res = CreateProcess ( NULL, szCmdLine, NULL, NULL, TRUE, 0, NULL, NULL, &si, &pi );
+
+    if ( res )
     {
         CloseHandle ( pi.hThread );
         WaitForSingleObject ( pi.hProcess, INFINITE );
         CloseHandle ( pi.hProcess );
+        return TRUE;
     }
 
-    return dwExitCode;
+    return FALSE;
 }

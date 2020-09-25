@@ -1,0 +1,279 @@
+
+2020-09-17, 23.51.15:
+190325 ms,  230150 time(s): address 000000013F94C3A1
+33026 ms,       1 time(s): address 000000013F950F84
+10581 ms,       1 time(s): address 000000013F94BA00
+ 3495 ms,    4784 time(s): address 000000013F94DDAF
+  610 ms,    2973 time(s): address 000000013F94B592
+   62 ms,    2150 time(s): address 000000013F94C813
+   47 ms,    4081 time(s): address 000000013F94F076
+   16 ms,    4082 time(s): address 000000013F945070
+   16 ms,     144 time(s): address 000000013F94C253
+   15 ms,       1 time(s): address 000000013F9438CD
+    0 ms,       1 time(s): address 000000013F94B2B0
+    0 ms,       1 time(s): address 000000013F94B5D0
+    0 ms,       1 time(s): address 000000013F94B97A
+    0 ms,       1 time(s): address 000000013F957883
+    0 ms,       1 time(s): address 000000013F94B73F
+    0 ms,       1 time(s): address 000000013F943DA9
+    0 ms,       3 time(s): address 000000013F947F90
+    0 ms,    2954 time(s): address 000000013F958313
+    0 ms,    2954 time(s): address 000000013F9585DF
+    0 ms,    2959 time(s): address 000000013F958185
+    0 ms,       5 time(s): address 000000013F94B45C
+    0 ms,       3 time(s): address 000000013F9554DC
+    0 ms,       5 time(s): address 000000013F95607D
+    0 ms,       1 time(s): address 000000013F94ADEB
+    0 ms,       1 time(s): address 000000013F949F14
+    0 ms,       1 time(s): address 000000013F94AF87
+    0 ms,       2 time(s): address 000000013F95502B
+    0 ms,       1 time(s): address 000000013F94B92A
+    0 ms,       2 time(s): address 000000013F94B8CC
+    0 ms,       5 time(s): address 000000013F94B9AD
+    0 ms,       1 time(s): address 000000013F956281
+    0 ms,       7 time(s): address 000000013F94AF24
+    0 ms,       4 time(s): address 000000013F94B89B
+    0 ms,       1 time(s): address 000000013F956497
+    0 ms,       1 time(s): address 000000013F947550
+    0 ms,       6 time(s): address 000000013F94801F
+    0 ms,      21 time(s): address 000000013F94B560
+    0 ms,       1 time(s): address 000000013F94445D
+    0 ms,       1 time(s): address 000000013F944090
+    0 ms,       1 time(s): address 000000013F9444FD
+    0 ms,       1 time(s): address 000000013F9445E4
+    0 ms,    4082 time(s): address 000000013F9450CB
+    0 ms,       5 time(s): address 000000013F95823F
+    0 ms,       3 time(s): address 000000013F9556DE
+    0 ms,       1 time(s): address 000000013F94A320
+    0 ms,       1 time(s): address 000000013F9480E3
+    0 ms,       1 time(s): address 000000013F9478E8
+    0 ms,       1 time(s): address 000000013F950538
+    0 ms,       1 time(s): address 000000013F947A91
+    0 ms,       1 time(s): address 000000013F9447A0
+    0 ms,       1 time(s): address 000000013F955807
+    0 ms,       1 time(s): address 000000013F956FB0
+    0 ms,      19 time(s): address 000000013F94B39D
+    0 ms,       1 time(s): address 000000013F9480B2
+    0 ms,       1 time(s): address 000000013F948050
+    0 ms,       1 time(s): address 000000013F948081
+    0 ms,       1 time(s): address 000000013F949071
+    0 ms,       1 time(s): address 000000013F94E501
+    0 ms,       1 time(s): address 000000013F9565D8
+    0 ms,       1 time(s): address 000000013F9451D4
+    0 ms,       2 time(s): address 000000013F945120
+    0 ms,       2 time(s): address 000000013F95264E
+    0 ms,       1 time(s): address 000000013F957AF1
+    0 ms,       1 time(s): address 000000013F95664D
+    0 ms,     461 time(s): address 000000013F94DABC
+    0 ms,       1 time(s): address 000000013F943926
+    0 ms,       5 time(s): address 000000013F958423
+    0 ms,       1 time(s): address 000000013F946A1D
+    0 ms,    1140 time(s): address 000000013F9457BB
+    0 ms,       1 time(s): address 000000013F945633
+    0 ms,       1 time(s): address 000000013F943760
+    0 ms,       1 time(s): address 000000013F94388C
+    0 ms,       1 time(s): address 000000013F950471
+    0 ms,       1 time(s): address 000000013F955AEE
+    0 ms,       1 time(s): address 000000013F9437CA
+    0 ms,       1 time(s): address 000000013F946ACA
+
+2020-09-17, 23.51.51:
+24494 ms,       1 time(s): address 000000013F11BA00
+  109 ms,     419 time(s): address 000000013F11DDAF
+   46 ms,     775 time(s): address 000000013F11C3A1
+   16 ms,       1 time(s): address 000000013F1137CA
+   15 ms,     288 time(s): address 000000013F11C253
+    0 ms,       5 time(s): address 000000013F12823F
+    0 ms,       5 time(s): address 000000013F128423
+    0 ms,       1 time(s): address 000000013F113760
+    0 ms,       1 time(s): address 000000013F11388C
+    0 ms,       4 time(s): address 000000013F115070
+    0 ms,       1 time(s): address 000000013F11B2B0
+    0 ms,       1 time(s): address 000000013F11B5D0
+    0 ms,       1 time(s): address 000000013F11B97A
+    0 ms,       1 time(s): address 000000013F116ACA
+    0 ms,       1 time(s): address 000000013F11B73F
+    0 ms,       1 time(s): address 000000013F127883
+    0 ms,       3 time(s): address 000000013F117F90
+    0 ms,       6 time(s): address 000000013F128313
+    0 ms,       6 time(s): address 000000013F1285DF
+    0 ms,       9 time(s): address 000000013F11B592
+    0 ms,       4 time(s): address 000000013F11B45C
+    0 ms,       3 time(s): address 000000013F1254DC
+    0 ms,       3 time(s): address 000000013F12607D
+    0 ms,       1 time(s): address 000000013F11ADEB
+    0 ms,       1 time(s): address 000000013F119F14
+    0 ms,       1 time(s): address 000000013F11AF87
+    0 ms,       2 time(s): address 000000013F12502B
+    0 ms,       1 time(s): address 000000013F11B92A
+    0 ms,       2 time(s): address 000000013F11B8CC
+    0 ms,       4 time(s): address 000000013F11B9AD
+    0 ms,       1 time(s): address 000000013F126281
+    0 ms,      36 time(s): address 000000013F11AF24
+    0 ms,       4 time(s): address 000000013F11B89B
+    0 ms,       1 time(s): address 000000013F126497
+    0 ms,       1 time(s): address 000000013F117550
+    0 ms,       4 time(s): address 000000013F11801F
+    0 ms,       2 time(s): address 000000013F11B560
+    0 ms,       1 time(s): address 000000013F11445D
+    0 ms,       1 time(s): address 000000013F114090
+    0 ms,       1 time(s): address 000000013F1141A9
+    0 ms,       1 time(s): address 000000013F114EA6
+    0 ms,       1 time(s): address 000000013F1144FD
+    0 ms,       1 time(s): address 000000013F1145E4
+    0 ms,       4 time(s): address 000000013F1150CB
+    0 ms,       3 time(s): address 000000013F11F076
+    0 ms,       2 time(s): address 000000013F1256DE
+    0 ms,       1 time(s): address 000000013F11A320
+    0 ms,       1 time(s): address 000000013F1180E3
+    0 ms,       1 time(s): address 000000013F1178E8
+    0 ms,       1 time(s): address 000000013F120538
+    0 ms,       1 time(s): address 000000013F117A91
+    0 ms,       1 time(s): address 000000013F1147A0
+    0 ms,       1 time(s): address 000000013F125807
+    0 ms,       1 time(s): address 000000013F126FB0
+    0 ms,       1 time(s): address 000000013F120471
+    0 ms,       1 time(s): address 000000013F125AEE
+    0 ms,       1 time(s): address 000000013F113DA9
+    0 ms,      11 time(s): address 000000013F128185
+
+2020-09-17, 23.52.52:
+11309 ms,       1 time(s): WinMain
+  110 ms,     196 time(s): WndProc
+   32 ms,     193 time(s): SC_TabSubclassProc
+   16 ms,     533 time(s): SC_RichSubclassProc
+    0 ms,      11 time(s): _StringValidateDestW
+    0 ms,       5 time(s): _StringCopyWorkerW
+    0 ms,       5 time(s): StringCchCopyW
+    0 ms,       1 time(s): LoadFontFromInifile
+    0 ms,       1 time(s): LoadWindowPosition
+    0 ms,       6 time(s): alloc_and_zero_mem
+    0 ms,       1 time(s): SB_MakeStatusBar
+    0 ms,       1 time(s): Tab_NewTab
+    0 ms,       1 time(s): Tab_SetImageList
+    0 ms,       1 time(s): IsThereAnotherInstance
+    0 ms,       1 time(s): Tab_NewTabPage
+    0 ms,       1 time(s): InitImgList
+    0 ms,       3 time(s): Rich_GetCaretPos
+    0 ms,       6 time(s): _StringVPrintfWorkerW
+    0 ms,       6 time(s): StringCchPrintfW
+    0 ms,       9 time(s): SB_StatusSetText
+    0 ms,       4 time(s): SB_StatusResizePanels
+    0 ms,       3 time(s): UpdateCaretPos
+    0 ms,       3 time(s): MainWND_OnNotify
+    0 ms,       1 time(s): Rich_WordWrap
+    0 ms,       1 time(s): Rich_NewRichedit
+    0 ms,       1 time(s): Rich_GetFontHeight
+    0 ms,       2 time(s): TD_UpdateTabDataEntry
+    0 ms,       1 time(s): Tab_SetPadding
+    0 ms,       2 time(s): Tab_SetText
+    0 ms,       4 time(s): Tab_SetImg
+    0 ms,       1 time(s): MainWND_OnCreate
+    0 ms,      76 time(s): Rich_CreateShowCaret
+    0 ms,       4 time(s): Tab_GetCount
+    0 ms,       1 time(s): MainWND_OnSize
+    0 ms,       1 time(s): FILE_CommandLineToArgv
+    0 ms,       4 time(s): Rich_GetModified
+    0 ms,       2 time(s): SB_StatusSetSimple
+    0 ms,       1 time(s): ENC_IsUNICODE
+    0 ms,       1 time(s): ENC_CheckBOM
+    0 ms,       1 time(s): ENC_IsUTF8
+    0 ms,       1 time(s): ENC_CheckUtf32_LE
+    0 ms,       1 time(s): ENC_CheckEncoding
+    0 ms,       1 time(s): ENC_FileCheckEncoding
+    0 ms,       6 time(s): free_mem
+    0 ms,       5 time(s): STR_StreamInProc
+    0 ms,       2 time(s): UpdateModifiedStatus
+    0 ms,       1 time(s): Rich_Streamin
+    0 ms,       1 time(s): Rich_SetModified
+    0 ms,       1 time(s): FILE_Extract_full_fname
+    0 ms,       1 time(s): UpdateTitlebar
+    0 ms,       1 time(s): FILE_GetFileSize
+    0 ms,       1 time(s): ENC_EncTypeToStr
+    0 ms,       1 time(s): UpdateEncodingStatus
+    0 ms,       1 time(s): OpenFileListFromCMDL
+    0 ms,       1 time(s): Prompt_to_save
+    0 ms,       1 time(s): QuitSaveCheck
+    0 ms,       1 time(s): SaveWindowPosition
+    0 ms,       1 time(s): IniFromModule
+
+2020-09-17, 23.54.00:
+16329 ms,   66801 time(s): SC_RichSubclassProc
+ 7521 ms,       1 time(s): WinMain
+ 5320 ms,    3307 time(s): WndProc
+ 3603 ms,       1 time(s): DLG_OutputWnd
+ 2262 ms,       1 time(s): DLG_OpenDlg
+   78 ms,    1294 time(s): SB_StatusSetText
+   47 ms,    1166 time(s): SC_OutwSubclassProc
+   31 ms,    4081 time(s): STR_StreamInProc
+   15 ms,       1 time(s): Rich_NewRichedit
+   15 ms,    4084 time(s): alloc_and_zero_mem
+   15 ms,     385 time(s): SC_TabSubclassProc
+    0 ms,       1 time(s): Tab_NewTab
+    0 ms,       1 time(s): Tab_SetImageList
+    0 ms,       1 time(s): InitImgList
+    0 ms,       1 time(s): Tab_NewTabPage
+    0 ms,       1 time(s): IniFromModule
+    0 ms,       3 time(s): Rich_GetCaretPos
+    0 ms,    1252 time(s): _StringVPrintfWorkerW
+    0 ms,    1252 time(s): StringCchPrintfW
+    0 ms,    1257 time(s): _StringValidateDestW
+    0 ms,       5 time(s): SB_StatusResizePanels
+    0 ms,       3 time(s): UpdateCaretPos
+    0 ms,       9 time(s): MainWND_OnNotify
+    0 ms,       1 time(s): Rich_WordWrap
+    0 ms,       5 time(s): _StringCopyWorkerW
+    0 ms,       1 time(s): Rich_GetFontHeight
+    0 ms,       2 time(s): TD_UpdateTabDataEntry
+    0 ms,       1 time(s): Tab_SetPadding
+    0 ms,       2 time(s): Tab_SetText
+    0 ms,       5 time(s): Tab_SetImg
+    0 ms,       1 time(s): MainWND_OnCreate
+    0 ms,       8 time(s): Rich_CreateShowCaret
+    0 ms,       5 time(s): Tab_GetCount
+    0 ms,       1 time(s): MainWND_OnSize
+    0 ms,       1 time(s): FILE_CommandLineToArgv
+    0 ms,       7 time(s): Rich_GetModified
+    0 ms,      51 time(s): SB_StatusSetSimple
+    0 ms,       1 time(s): ENC_IsUNICODE
+    0 ms,       1 time(s): ENC_CheckBOM
+    0 ms,       1 time(s): ENC_CheckEncoding
+    0 ms,       1 time(s): ENC_FileCheckEncoding
+    0 ms,    4084 time(s): free_mem
+    0 ms,       5 time(s): StringCchCopyW
+    0 ms,       3 time(s): UpdateModifiedStatus
+    0 ms,       1 time(s): Rich_Streamin
+    0 ms,       1 time(s): Rich_SetModified
+    0 ms,       1 time(s): FILE_Extract_full_fname
+    0 ms,       1 time(s): UpdateTitlebar
+    0 ms,       1 time(s): FILE_GetFileSize
+    0 ms,       1 time(s): ENC_EncTypeToStr
+    0 ms,       1 time(s): UpdateEncodingStatus
+    0 ms,       1 time(s): OpenFileListFromCMDL
+    0 ms,      49 time(s): SB_MenuHelp
+    0 ms,       1 time(s): Rich_CanPaste
+    0 ms,       1 time(s): Rich_CanUndo
+    0 ms,       1 time(s): Rich_CanRedo
+    0 ms,       1 time(s): Rich_GetSelLen
+    0 ms,       2 time(s): UpdateMenuStatus
+    0 ms,       3 time(s): MainWND_OnInitMenuPopup
+    0 ms,       1 time(s): GetMenuItemText
+    0 ms,       2 time(s): SetMenuItemText
+    0 ms,       2 time(s): CFDeclEnableMenus
+    0 ms,       2 time(s): Menu_CFDeclAll
+    0 ms,       3 time(s): MainWND_OnCommand
+    0 ms,     196 time(s): DLG_OUTviewDlgProc
+    0 ms,       1 time(s): LoadDlgPosition
+    0 ms,       1 time(s): LoadFontFromInifile
+    0 ms,       1 time(s): CenterDlg
+    0 ms,    1052 time(s): Parse_OUT_Buf_Proc
+    0 ms,       1 time(s): Parse_OUT_Buf
+    0 ms,       1 time(s): SaveDlgPosition
+    0 ms,       1 time(s): LoadWindowPosition
+    0 ms,       1 time(s): UpdateEncodingMenus
+    0 ms,       1 time(s): IsThereAnotherInstance
+    0 ms,       1 time(s): Menu_Open
+    0 ms,       1 time(s): Prompt_to_save
+    0 ms,       1 time(s): QuitSaveCheck
+    0 ms,       1 time(s): SaveWindowPosition
+    0 ms,       1 time(s): SB_MakeStatusBar
