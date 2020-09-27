@@ -1,0 +1,95 @@
+;-----------------------------
+; TextEdit sample config file
+;-----------------------------
+
+; window position and size
+[window]
+maximized=1
+position=82000000C900000044070000B003000049
+ontop=0
+
+;
+; various settings
+;
+[editor]
+author=Adrian Petrila, YO3GFH
+wrap=1
+capture=1
+bgcolor=1616160042
+process working dir=D:\tmp
+margin=1
+fgcolor=FF8000007F
+bg_custom_colors=D3ABD3009AB5E400EC93A500F0F0F00038383800F0F0F000F0F0F000F0F0F0000B101700B0CEBC00B7EEED002828280016161600F0F0F000F0F0F000F0F0F000B8
+fg_custom_colors=D2D2D200EAECB900EFEFEF00F0F0F000F0F0F000F0F0F000F0F0F000F0F0F000DFDAC600F0F0F000F0F0F000F0F0F000F0F0F000F0F0F000F0F0F000F0F0F00011
+log_font=F0FFFFFF00000000000000000000000090010000000000000302013143006F006E0073006F006C0061007300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000F7
+choose_font=680000000000000046033F0000000000000000000000000088E92F00000000007800000041090000C0C0C000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000F2
+last_cmd={P}dasmd.cmd {p}{n}
+
+;
+; execute external tool history
+;
+[run history]
+count=2
+item0=cmd.exe /c dir d:
+item1=notepad.exe
+
+;
+; size and pos for output window
+;
+[outwindow]
+position=0000000008030000800700000204000098
+
+;
+; size and pos for hexview window
+;
+[hexviewer]
+position=830200005E000000FC040000BC030000A2
+
+;
+; find/replace dlg history
+;
+[find history]
+count=2
+crtsel=1
+item0=40011
+item1=40012
+
+[replace history]
+count=2
+crtsel=1
+item0=test
+item1=not working
+
+;
+; these will appear under the User Menu
+; structure:
+; 	menux=<caption>,<cmd>,<dir>,<capture>
+;    caption can be {SEPARATOR}, for a menu separator
+;    {f} = full name/path of loaded document
+;    {p} = path to loaded file
+;    {n} = filename (no ext) for loaded file
+;    {F} = filename+ext.
+;    {e} = ext. only
+;    {P} = path to textedit.exe
+;
+[user menu]
+menu1=&Assemble with MASM...,{P}assmbl.cmd {p}{n},{p},1
+menu2=&Compile Resource,{P}bres.cmd,{p},1
+menu3={SEPARATOR}
+menu4=CONSOLE &Link,{P}lnkc.cmd {p}{n},{p},1
+menu5=CONSOLE &Build All,{P}buildc.cmd {p}{n},{p},1
+menu6=CONSOLE &Disassemble Result,{P}dasm.cmd {p}{n},{p},1
+menu7={SEPARATOR}
+menu8=GUI L&ink,{P}lnk.cmd {p}{n},{p},1
+menu9=GUI B&uild All,{P}build.cmd {p}{n},{p},1
+menu10=GUI Di&sassemble Result,{P}dasm.cmd {p}{n},{p},1
+menu11={SEPARATOR}
+menu12=DLL Li&nk,{P}lnkdll.cmd {p}{n},{p},1
+menu13=DLL Bui&ld All,{P}bldalldll.cmd {p}{n},{p},1
+menu14=DLL Disass&emble Result,{P}dasmd.cmd {p}{n},{p},1
+menu15={SEPARATOR}
+menu16=S&YS Link,{P}lnksys.cmd {p}{n},{p},1
+menu17=SYS Build All,{P}bldallsys {p}{n},{p},1
+menu18={SEPARATOR}
+menu19=Run Program,{p}{n}.exe,{p},0
+menu20=Disassemble File,{P}dasmf.cmd {f},{p},1
