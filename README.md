@@ -54,6 +54,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 * Uses Richedit v4.1 to open/edit/save text in ANSI and UNICODE (UTF8/16/32-LE/BE with/without BOM). You can use Richedit 3.0/2.0 if you want (undef HAVE_MSFTEDIT), but not 1.0 (does not support UNICODE). It works on win7, 8 and 10, should work on xp sp3 too. Please note that it does not use any features specific to latest Richedit versions (7.5 on W8 and 8.5 on W10).
 * Multiple file support (tabbed).
+* User Defined menus (custom apps)
 * Execute external programs in a separate thread, optionally capturing console output (you may use it as a crude IDE).
 * View current selection as HEX.
 * Parse source files for C function definitions/declarations in order to generate header files
