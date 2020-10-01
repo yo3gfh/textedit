@@ -47,9 +47,13 @@ int _tmain ( int argc, _TCHAR ** argv )
 
     if ( argc < 2 )
     {
-        _ftprintf ( stdout, TEXT("\nSpawn v1.0, copyright (c) 2002-2020 by Adrian Petrila, YO3GFH\n")
-                            TEXT("Create and spawn a new process. Helper app for textedit.exe\n\n")
-                            TEXT("\tUsage: spawn <program [command line]>\n") );
+        _ftprintf ( stdout, 
+            TEXT("\nSpawn v1.0, copyright (c) 2002-2020"
+                " by Adrian Petrila, YO3GFH\n")
+            TEXT("Create and spawn a new process. "
+                "Helper app for textedit.exe\n\n")
+            TEXT("\tUsage: spawn <program [command line]>\n") );
+
         return 4;
     }
 
@@ -65,7 +69,8 @@ int _tmain ( int argc, _TCHAR ** argv )
     si.cb = sizeof ( STARTUPINFO );
     RtlZeroMemory ( &pi, sizeof ( PROCESS_INFORMATION ) );
 
-    res = CreateProcess ( NULL, szCmdLine, NULL, NULL, TRUE, 0, NULL, NULL, &si, &pi );
+    res = CreateProcess ( NULL, szCmdLine, NULL, 
+        NULL, TRUE, 0, NULL, NULL, &si, &pi );
 
     if ( res )
     {
