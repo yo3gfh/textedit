@@ -1,4 +1,5 @@
 output
+setup
 *.exe
 *.obj
 *.res
