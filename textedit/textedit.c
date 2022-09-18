@@ -2652,7 +2652,8 @@ void Menu_SaveSelection ( HWND hparent )
 //    DESCRIPTION: Callback for the Rich_FindAll function;
 //                 Return FALSE to break operation.
 /*--------------------------------------------------------------------@@-@@-*/
-BOOL CALLBACK FindAllProc ( BOOL valid, TCHAR * linetext, DWORD line, LPARAM lParam )
+BOOL CALLBACK FindAllProc 
+    ( BOOL valid, TCHAR * linetext, DWORD line, LPARAM lParam )
 /*--------------------------------------------------------------------------*/
 {
     MSG msg;
@@ -3675,7 +3676,6 @@ void FAllEnableMenus ( BOOL state )
 
     hsub = GetSubMenu ( g_hMainmenu, IDMM_VIEW ); // view
     EnableMenuItem ( hsub, IDM_ONTOP, states[state] );
-    //EnableMenuItem ( hsub, IDM_VIEWOUT, states[state] );//IDM_CCOM
 
     hsub = GetSubMenu ( g_hMainmenu, IDMM_USER ); // view
 
@@ -3743,7 +3743,6 @@ void ETLastEnableMenus ( BOOL state )
     hsub = GetSubMenu ( g_hMainmenu, IDMM_TOOLS ); // tools
     EnableMenuItem ( hsub, IDM_VEXPLORE, states[state] );
     EnableMenuItem ( hsub, IDM_RUN, states[state] );
-    //EnableMenuItem ( hsub, IDM_RUNLAST, states[state] );//IDM_RUNLAST
     EnableMenuItem ( hsub, IDM_WINFIND, states[state] );
     EnableMenuItem ( hsub, IDM_PRINT, states[state] );
     EnableMenuItem ( hsub, IDM_PROP, states[state] );
@@ -3764,7 +3763,6 @@ void ETLastEnableMenus ( BOOL state )
 
     hsub = GetSubMenu ( g_hMainmenu, IDMM_VIEW ); // view
     EnableMenuItem ( hsub, IDM_ONTOP, states[state] );
-    //EnableMenuItem ( hsub, IDM_VIEWOUT, states[state] );
 
     hsub = GetSubMenu ( g_hMainmenu, IDMM_USER ); // view
 
@@ -4286,7 +4284,6 @@ BOOL Menu_Print ( HWND hWnd )
 {
     BOOL        mod;
     HWND        hRich;
-    //int         img_state[2] = {TIDX_SAV, TIDX_MOD};
 
     hRich = tab_data[g_curtab].hchild;
 
@@ -4894,7 +4891,7 @@ BOOL QuitSaveCheck ( void )
     }
 
     g_curtab = old_tab;
-    //g_thread_working = FALSE; // stop any tab cvt in progress
+
     return result;
 }
 
