@@ -315,6 +315,7 @@ static TCHAR * CF_StripCrap ( const TCHAR * wsrc, TCHAR * wdest, int cchMax )
     INT_PTR i, len, start;
     TCHAR   * p, * s;
     BOOL    skipping = TRUE;
+    BOOL    cr_skipping = TRUE;
     BOOL    in_comment = FALSE;
     BOOL    in_macro = FALSE;
     BOOL    block_comment = FALSE;
@@ -394,14 +395,24 @@ static TCHAR * CF_StripCrap ( const TCHAR * wsrc, TCHAR * wdest, int cchMax )
             continue;
         }
 
-        if ( wsrc[i] == TEXT('#')) 
+        if ( wsrc[i] == TEXT('#'))
         {
             in_macro = TRUE;
             continue;
         }
 
-        if ( CF_IsEndl ( wsrc[i]) ) // get rid of all endline
+        // try to accomodate MS style
+        // multiline function, gobble one
+        // cr and make it a space
+        if ( CF_IsEndl ( wsrc[i]) )
+        {
+            if ( cr_skipping == FALSE )
+            {
+                *p++ = TEXT(' ');
+                cr_skipping = TRUE;
+            }
             continue;
+        }
 
         if ( CF_IsWhite(wsrc[i]) )
         {
@@ -416,6 +427,7 @@ static TCHAR * CF_StripCrap ( const TCHAR * wsrc, TCHAR * wdest, int cchMax )
         {
             *p++ = wsrc[i];
             skipping = FALSE;
+            cr_skipping = FALSE;
         }
     }
 
