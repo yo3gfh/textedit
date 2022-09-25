@@ -11,8 +11,8 @@
 #define IDD_EXT                         107
 #define IDD_FIND                        108
 
-#define IDI_SMALL                       508
-#define IDI_LARGE                       508
+#define IDI_APP                         508
+//#define IDI_LARGE                       508
 #define IDI_SAV                         509
 #define IDI_MOD                         510
 
@@ -35,6 +35,7 @@
 #define IDC_REPSTR                      1012
 #define IDC_TABSTOPS                    1013
 #define IDC_CB                          1014
+#define IDC_VER                         1016
 #define IDC_FALL                        1024
 #define IDC_CKREDIR                     1019
 #define IDC_WKDIR                       1020

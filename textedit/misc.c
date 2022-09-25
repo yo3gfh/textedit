@@ -44,7 +44,7 @@ TCHAR       * opn_defext    = TEXT("txt");
 
 TCHAR       * app_classname = TEXT("TED_CLASS_666");
 TCHAR       * app_classname2 = TEXT("TED_CLASS_6969");
-TCHAR       * app_title     = TEXT("TextEdit v2.1, copyright (c) "
+TCHAR       * app_title     = TEXT("TextEdit v2, copyright (c) "
                                     "2002-2020 Adrian Petrila, YO3GFH");
 
 TCHAR       * macro_hlp     = TEXT("N O T E S:\n1). The following macros "
@@ -84,7 +84,8 @@ int ShowMessage ( HWND hown, TCHAR * msg, DWORD style, DWORD icon_id )
 
     mp.cbSize               = sizeof ( mp );
     mp.dwStyle              = MB_USERICON | style;
-    mp.hInstance            = ( icon_id == 0 ) ? NULL : GetModuleHandle ( NULL );
+    mp.hInstance            = ( icon_id == 0 ) ? 
+        NULL : GetModuleHandle ( NULL );
     mp.lpszIcon             = ( icon_id == 0 ) ? 
         MAKEINTRESOURCE ( IDI_INFORMATION ) : MAKEINTRESOURCE ( icon_id );
     mp.hwndOwner            = hown;
@@ -1324,3 +1325,73 @@ TCHAR * ChmFromModule ( HMODULE hMod )
     return buf;
 }
 #endif
+
+/*-@@+@@--------------------------------------------------------------------*/
+//       Function: FileVersionAsString 
+/*--------------------------------------------------------------------------*/
+//           Type: TCHAR * 
+//    Param.    1: const TCHAR * fpath : full path to file to retrieve
+//                                       version for
+/*--------------------------------------------------------------------------*/
+//         AUTHOR: stackoverflow, Adrian Petrila, YO3GFH
+//           DATE: 25.09.2022
+//    DESCRIPTION: returns file version as a NULL terminated string 
+//                 (e.g. 1.0.0.2) or empty string on error.
+/*--------------------------------------------------------------------@@-@@-*/
+TCHAR * FileVersionAsString ( const TCHAR * fpath )
+/*--------------------------------------------------------------------------*/
+{
+    static TCHAR        buf[TMAX_PATH];
+    const TCHAR         * work_path;
+    DWORD               ver_datasize;
+    void                * pverdata;
+    BYTE                * pbyte;
+    UINT                size;
+    VS_FIXEDFILEINFO    * ver_info;
+
+    work_path = fpath;
+
+    if ( fpath == NULL ) 
+    {
+        GetModuleFileName ( NULL, buf, ARRAYSIZE(buf));
+        work_path = buf;
+    }
+    
+    ver_datasize = GetFileVersionInfoSize ( work_path, NULL );
+
+    if ( ver_datasize )
+    {
+        pverdata = alloc_and_zero_mem ( ver_datasize );
+        if ( pverdata )
+        {
+            if ( GetFileVersionInfo ( work_path, 0, ver_datasize, pverdata ) )
+            {
+                if ( VerQueryValue ( pverdata, TEXT("\\"), 
+                        (void**)&pbyte, &size ) )
+                {
+                    if ( size )
+                    {
+                        ver_info = (VS_FIXEDFILEINFO *)pbyte;
+                        if ( ver_info->dwSignature == 0xfeef04bd )
+                        {
+                            StringCchPrintf ( buf, ARRAYSIZE(buf), 
+                              TEXT("%d.%d.%d.%d"), 
+                              ( ver_info->dwFileVersionMS >> 16 ) & 0xffff, 
+                              ( ver_info->dwFileVersionMS >> 0 ) & 0xffff, 
+                              ( ver_info->dwFileVersionLS >> 16 ) & 0xffff, 
+                              ( ver_info->dwFileVersionLS >> 0 ) & 0xffff );
+                            
+                            free_mem ( pverdata );
+                            return buf;
+                        }
+                    }
+                }
+            }
+
+            free_mem ( pverdata );
+        }
+    }
+
+    buf[0] = TEXT('\0');
+    return buf;
+}

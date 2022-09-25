@@ -407,7 +407,7 @@ int WINAPI WinMain ( HINSTANCE hInstance, HINSTANCE hPrevInstance,
     {
         // unable to find richedit/msft dll
         StringCchPrintf ( temp, ARRAYSIZE(temp), CCH_SPEC5, RICH_DLL ); 
-        ShowMessage ( NULL, temp, MB_OK, IDI_LARGE );
+        ShowMessage ( NULL, temp, MB_OK, IDI_APP );
         FreeLibrary ( hDetour );
         return 0;
     }
@@ -416,10 +416,10 @@ int WINAPI WinMain ( HINSTANCE hInstance, HINSTANCE hPrevInstance,
     g_bnot_alone = IsThereAnotherInstance ( app_classname );
 
     g_hIcon                = LoadIcon ( g_hInst, 
-                                MAKEINTRESOURCE ( IDI_LARGE ) );
+                                MAKEINTRESOURCE ( IDI_APP ) );
 
     g_hSmallIcon           = LoadIcon ( g_hInst, 
-                                MAKEINTRESOURCE ( IDI_SMALL ) );
+                                MAKEINTRESOURCE ( IDI_APP ) );
 
     g_hIml                 = InitImgList();
 
@@ -450,7 +450,7 @@ int WINAPI WinMain ( HINSTANCE hInstance, HINSTANCE hPrevInstance,
     if ( !RegisterClassEx ( &wndclass ) )
     {
         ShowMessage ( NULL, TEXT("Unable to register window class"), 
-                        MB_OK, IDI_LARGE );
+                        MB_OK, IDI_APP );
 
         FreeLibrary ( hDetour );
         DestroyMenu ( g_hMainmenu );
@@ -509,7 +509,7 @@ int WINAPI WinMain ( HINSTANCE hInstance, HINSTANCE hPrevInstance,
     if ( !hWnd )
     {
         ShowMessage ( NULL, TEXT("Could not create main window"),
-                        MB_OK, IDI_LARGE );
+                        MB_OK, IDI_APP );
 
         DeleteObject ( g_hFont );
         FreeLibrary ( hDetour );
@@ -1015,10 +1015,20 @@ INT_PTR CALLBACK DLG_AboutDlgProc ( HWND hDlg, UINT uMsg,
     WPARAM wParam, LPARAM lParam )
 /*--------------------------------------------------------------------------*/
 {
+    TCHAR   buf[64];
+
     switch ( uMsg )
     {
         case WM_INITDIALOG:
             CenterDlg ( hDlg, g_hMain );
+#ifdef UNICODE
+            StringCchPrintf ( buf, ARRAYSIZE(buf), L"build: %ls", 
+                FileVersionAsString ( NULL ));
+#else
+            StringCchPrintf ( buf, ARRAYSIZE(buf), "build: %s", 
+                FileVersionAsString ( NULL ));
+#endif
+            SetDlgItemText ( hDlg, 1016, buf );
             break;
 
         case WM_CLOSE:
@@ -2475,7 +2485,7 @@ BOOL Prompt_to_save ( void )
             "Do you wish to save \"%s\" ?", tab_data[g_curtab].fpath );
         #endif
 
-        result = ShowMessage ( g_hMain, temp, MB_YESNOCANCEL, IDI_LARGE );
+        result = ShowMessage ( g_hMain, temp, MB_YESNOCANCEL, IDI_APP );
 
         if ( result == IDYES )
         {
@@ -2590,7 +2600,7 @@ BOOL Menu_MergeFile ( HWND hWnd )
     if ( !DLG_OpenDlg ( hWnd, temp, ARRAYSIZE ( temp ), FALSE, FALSE ) )
     {
         StringCchPrintf ( temp2, ARRAYSIZE(temp2), CCH_SPEC2, temp );
-        ShowMessage ( hWnd, temp2, MB_OK, IDI_LARGE );
+        ShowMessage ( hWnd, temp2, MB_OK, IDI_APP );
         result = FALSE;
     }
 
@@ -2601,7 +2611,7 @@ BOOL Menu_MergeFile ( HWND hWnd )
             ENC_EncTypeToStr ( old_encoding ),
             ENC_EncTypeToStr ( tab_data[g_curtab].fencoding ) );
 
-        ShowMessage ( hWnd, temp2, MB_OK, IDI_LARGE );
+        ShowMessage ( hWnd, temp2, MB_OK, IDI_APP );
     }
     // restore encoding
     if ( old_encoding > 0 )
@@ -2635,7 +2645,7 @@ void Menu_SaveSelection ( HWND hparent )
             StringCchPrintf ( temp2, ARRAYSIZE(temp2), 
             "Error saving selection to %s", temp );
         #endif
-        ShowMessage ( hparent, temp2, MB_OK, IDI_LARGE );
+        ShowMessage ( hparent, temp2, MB_OK, IDI_APP );
     }
 }
 
@@ -2977,7 +2987,7 @@ INT_PTR CALLBACK DLG_HEXViewDlgProc ( HWND hDlg, UINT uMsg,
             __except ( EXCEPTION_EXECUTE_HANDLER )
             {
                 ShowMessage ( hDlg, 
-                    TEXT("Invalid data received :("), MB_OK, IDI_LARGE );
+                    TEXT("Invalid data received :("), MB_OK, IDI_APP );
             }
 
             EndDraw ( hlist );
@@ -3047,7 +3057,7 @@ BOOL Menu_RefreshFromDisk ( HWND hWnd )
         StringCchPrintf ( temp, ARRAYSIZE(temp), 
             CCH_SPEC2, tab_data[g_curtab].fpath );
 
-        ShowMessage ( hWnd, temp, MB_OK, IDI_LARGE );
+        ShowMessage ( hWnd, temp, MB_OK, IDI_APP );
         SB_StatusSetSimple ( g_hStatus, FALSE );
         return FALSE;
     }
@@ -3795,7 +3805,7 @@ BOOL Menu_Save ( HWND hWnd )
         if ( !DLG_SaveDlg ( hWnd, temp, ARRAYSIZE ( temp ), TRUE  ) )
         {
             StringCchPrintf ( temp2, ARRAYSIZE(temp2), CCH_SPEC3, temp );
-            ShowMessage ( hWnd, temp2, MB_OK, IDI_LARGE );
+            ShowMessage ( hWnd, temp2, MB_OK, IDI_APP );
             return FALSE;
         }
     }
@@ -3811,7 +3821,7 @@ BOOL Menu_Save ( HWND hWnd )
         {
             StringCchPrintf ( temp2, ARRAYSIZE(temp2), 
                 CCH_SPEC3, tab_data[g_curtab].fpath );
-            ShowMessage ( hWnd, temp2, MB_OK, IDI_LARGE );
+            ShowMessage ( hWnd, temp2, MB_OK, IDI_APP );
             SB_StatusSetSimple ( g_hStatus, FALSE );
             SB_StatusSetText ( g_hStatus, 1, TEXT("") );
             SB_StatusSetText ( g_hStatus, 2, TEXT("") );
@@ -3856,7 +3866,7 @@ BOOL Menu_Saveas ( HWND hWnd )
     if ( !DLG_SaveDlg ( hWnd, temp, ARRAYSIZE ( temp ), TRUE ) )
     {
         StringCchPrintf ( temp2, ARRAYSIZE(temp2), CCH_SPEC3, temp );
-        ShowMessage ( hWnd, temp2, MB_OK, IDI_LARGE );
+        ShowMessage ( hWnd, temp2, MB_OK, IDI_APP );
         return FALSE;
     }
     return TRUE;
@@ -3883,7 +3893,7 @@ BOOL Menu_New ( HWND hWnd )
     if ( tcount >= MAX_TABS )
     {
         ShowMessage ( hWnd, 
-            TEXT("Maximum tab page limit reached"), MB_OK, IDI_LARGE );
+            TEXT("Maximum tab page limit reached"), MB_OK, IDI_APP );
 
         return FALSE;
     }
@@ -3894,7 +3904,7 @@ BOOL Menu_New ( HWND hWnd )
     if ( tidx == -1 )
     {
         ShowMessage ( hWnd, 
-            TEXT("Unable to create tab page :("), MB_OK, IDI_LARGE );
+            TEXT("Unable to create tab page :("), MB_OK, IDI_APP );
 
         return FALSE;
     }
@@ -3906,7 +3916,7 @@ BOOL Menu_New ( HWND hWnd )
     if ( hRich == NULL )
     {
         ShowMessage ( hWnd, 
-            TEXT("Unable to create tab page :("), MB_OK, IDI_LARGE );
+            TEXT("Unable to create tab page :("), MB_OK, IDI_APP );
 
         return FALSE;
     }
@@ -4301,7 +4311,7 @@ BOOL Menu_Print ( HWND hWnd )
     __except ( EXCEPTION_EXECUTE_HANDLER )
     {
         ShowMessage ( hWnd, 
-            TEXT("Error printing"), MB_OK, IDI_LARGE );
+            TEXT("Error printing"), MB_OK, IDI_APP );
     }
 
     Rich_SetBGColor ( hRich, hWnd, CC_INIRESTORE, g_szinifile );
@@ -4812,7 +4822,7 @@ void Menu_Open ( HWND hWnd )
     {
         ShowMessage ( hWnd, 
             TEXT("Error allocating buffers for Open File dialog :-/"), 
-                MB_OK, IDI_LARGE );
+                MB_OK, IDI_APP );
         return;
     }
 
@@ -5379,11 +5389,11 @@ BOOL MainWND_OnENDEXECTOOL ( HWND hWnd, WPARAM wParam, LPARAM lParam )
             StringCchPrintf ( temp, ARRAYSIZE(temp), 
                 "Error creating process with commandline %s", petd->cmd );
         #endif
-            ShowMessage ( hWnd, temp, MB_OK, IDI_LARGE );
+            ShowMessage ( hWnd, temp, MB_OK, IDI_APP );
         }
         else
             ShowMessage ( hWnd, 
-                TEXT("Invalid thread data received :("), MB_OK, IDI_LARGE );
+                TEXT("Invalid thread data received :("), MB_OK, IDI_APP );
 
         return FALSE;
     }
@@ -6322,7 +6332,7 @@ BOOL OpenFileListFromOFD ( TCHAR * filelist, int fofset, BOOL newtab )
         else
         {
             StringCchPrintf ( temp, ARRAYSIZE(temp), CCH_SPEC2, fname );
-            ShowMessage ( g_hMain, temp, MB_OK, IDI_LARGE );
+            ShowMessage ( g_hMain, temp, MB_OK, IDI_APP );
         }
 
         // jump to the next filename

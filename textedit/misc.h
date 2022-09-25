@@ -46,5 +46,6 @@ extern TCHAR * Today ( void );
 extern TCHAR * Now ( void );
 extern TCHAR * ExpandMacro ( const TCHAR * src, const TCHAR * filespec );
 extern TCHAR * ChmFromModule ( HMODULE hMod );
+extern TCHAR * FileVersionAsString ( const TCHAR * fpath );
 
 #endif

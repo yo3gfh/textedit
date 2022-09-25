@@ -433,7 +433,7 @@ BOOL Rich_FindNext ( HWND hRich, HWND hParent, BOOL fwd )
     {
         ShowMessage ( hParent,
             TEXT("Selection is too large. Please keep it under 250 chars."),
-                MB_OK, IDI_LARGE );
+                MB_OK, IDI_APP );
 
         return FALSE;
     }
@@ -751,7 +751,7 @@ BOOL Rich_FindReplaceText ( HWND hRich, HWND hParent, TCHAR* txt, TCHAR* rep,
                         "Replace \"%s\" with \"%s\"?", txt, rep );
                 #endif
                 switch ( ShowMessage ( hParent, temp,
-                            MB_YESNOCANCEL, IDI_LARGE ) )
+                            MB_YESNOCANCEL, IDI_APP ) )
                 {
                     case IDCANCEL:
                         return FALSE;
@@ -784,7 +784,7 @@ BOOL Rich_FindReplaceText ( HWND hRich, HWND hParent, TCHAR* txt, TCHAR* rep,
                 StringCchPrintf ( temp, ARRAYSIZE(temp),
                     "No more matches for \"%s\"", txt );
             #endif
-            ShowMessage ( hParent, temp, MB_OK, IDI_LARGE );
+            ShowMessage ( hParent, temp, MB_OK, IDI_APP );
         }
 
         return FALSE;

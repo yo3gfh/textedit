@@ -3,340 +3,347 @@
 #include <windows.h>
 #include <commctrl.h>
 #include <richedit.h>
+#include "resource.h"
 
 LANGUAGE LANG_ENGLISH,SUBLANG_ENGLISH_US
 
-102 MENU
+IDR_MAINMENU MENU
 {
   POPUP "&File"
   {
-    MENUITEM "&New\tCtrl+N", 6021
+    MENUITEM "&New\tCtrl+N", IDM_NEW
     MENUITEM SEPARATOR
-    MENUITEM "&Open...\tCtrl+O", 6022
-    MENUITEM "&Save\tCtrl+S", 6023
-    MENUITEM "Save &as...\tShift+Ctrl+S", 6024
+    MENUITEM "&Open...\tCtrl+O", IDM_OPEN
+    MENUITEM "&Save\tCtrl+S", IDM_SAVE
+    MENUITEM "Save &as...\tShift+Ctrl+S", IDM_SAVEAS
     MENUITEM SEPARATOR
-    MENUITEM "Save as UTF8", 6002
-    MENUITEM "Save as UTF8 (BOM)", 6003
+    MENUITEM "Save as UTF8", IDM_UTF8
+    MENUITEM "Save as UTF8 (BOM)", IDM_UTF8_BOM
     MENUITEM SEPARATOR
-    MENUITEM "Save as UTF16-LE", 6004
-    MENUITEM "Save as UTF16-BE", 6005
-    MENUITEM "Save as UTF16-LE (BOM)", 6006
-    MENUITEM "Save as UTF16-BE (BOM)", 6007
+    MENUITEM "Save as UTF16-LE", IDM_UTF16_LE
+    MENUITEM "Save as UTF16-BE", IDM_UTF16_BE
+    MENUITEM "Save as UTF16-LE (BOM)", IDM_UTF16_LE_BOM
+    MENUITEM "Save as UTF16-BE (BOM)", IDM_UTF16_BE_BOM
     MENUITEM SEPARATOR
-    MENUITEM "Save as UTF32-LE", 6012
-    MENUITEM "Save as UTF32-BE", 6013
-    MENUITEM "Save as UTF32-LE (BOM)", 6014
-    MENUITEM "Save as UTF32-BE (BOM)", 6015
+    MENUITEM "Save as UTF32-LE", IDM_UTF32_LE
+    MENUITEM "Save as UTF32-BE", IDM_UTF32_BE
+    MENUITEM "Save as UTF32-LE (BOM)", IDM_UTF32_LE_BOM
+    MENUITEM "Save as UTF32-BE (BOM)", IDM_UTF32_BE_BOM
     MENUITEM SEPARATOR
-    MENUITEM "Save as ANSI", 6008
+    MENUITEM "Save as ANSI", IDM_ANSI
     MENUITEM SEPARATOR
-    MENUITEM "New &instance\tShift+Ctrl+N", 6018
-    MENUITEM "&Quit\tCtrl+Q", 6019
+    MENUITEM "New &instance\tShift+Ctrl+N", IDM_NEWINST
+    MENUITEM "&Quit\tCtrl+Q", IDM_QUIT
   }
   POPUP "&Edit"
   {
-    MENUITEM "&Undo action\tCtrl+Z", 6020
-    MENUITEM "Redo act&ion\tCtrl+Y", 6017
+    MENUITEM "&Undo action\tCtrl+Z", IDM_UNDO
+    MENUITEM "Redo act&ion\tCtrl+Y", IDM_REDO
     MENUITEM SEPARATOR
-    MENUITEM "&Cut\tCtrl+X", 6025
-    MENUITEM "C&opy\tCtrl+C", 6026
-    MENUITEM "&Paste\tCtrl+V", 6027
-    MENUITEM "&Delete\tDel", 6028
+    MENUITEM "&Cut\tCtrl+X", IDM_CUT
+    MENUITEM "C&opy\tCtrl+C", IDM_COPY
+    MENUITEM "&Paste\tCtrl+V", IDM_PASTE
+    MENUITEM "&Delete\tDel", IDM_DEL
     MENUITEM SEPARATOR
-    MENUITEM "&Select all\tCtrl+A", 6029
+    MENUITEM "&Select all\tCtrl+A", IDM_SELALL
     MENUITEM SEPARATOR
-    MENUITEM "&Find...\tCtrl+F", 6031
-    MENUITEM "Find &again\tF3", 6032
-    MENUITEM "Find &next selection (-->)\tCtrl+F3", 6042
-    MENUITEM "Find ne&xt selection (<--)\tShift+F3", 6009
-    MENUITEM "&Goto line...\tCtrl+G", 6034
+    MENUITEM "&Find...\tCtrl+F", IDM_FIND
+    MENUITEM "Find &again\tF3", IDM_FINDNEXT
+    MENUITEM "Find &next selection (-->)\tCtrl+F3", IDM_FINDSEL
+    MENUITEM "Find ne&xt selection (<--)\tShift+F3", IDM_FINDSEL_BK
+    MENUITEM "&Goto line...\tCtrl+G", IDM_GOTO
     MENUITEM SEPARATOR
-    MENUITEM "S&election margin\tCtrl+T", 6033, CHECKED
-    MENUITEM "&Word wrap\tCtrl+W", 6036
-    MENUITEM "&Hexadecimal view...\tF4", 6054
+    MENUITEM "S&election margin\tCtrl+T", IDM_MARGIN, CHECKED
+    MENUITEM "&Word wrap\tCtrl+W", IDM_WRAP
+    MENUITEM "&Hexadecimal view...\tF4", IDM_VIEWHEX
     MENUITEM SEPARATOR
-    MENUITEM "Sa&ve selection to...\tF11", 6037
-    MENUITEM "&Merge file...\tF12", 6038
-    MENUITEM "&Refresh from disk\tF5", 6055
+    MENUITEM "Sa&ve selection to...\tF11", IDM_SAVESEL
+    MENUITEM "&Merge file...\tF12", IDM_MERGE
+    MENUITEM "&Refresh from disk\tF5", IDM_REFR
     MENUITEM SEPARATOR
-    MENUITEM "Fon&t...", 6035
+    MENUITEM "Fon&t...", IDM_FONT
   }
   POPUP "&Tools"
   {
-    MENUITEM "&View in default browser\tCtrl+F9", 6040
+    MENUITEM "&View in default browser\tCtrl+F9", IDM_VEXPLORE
     MENUITEM SEPARATOR
-    MENUITEM "&Run...\tF9", 6043
-    MENUITEM "&Find files...", 6044
-    MENUITEM "Pr&int...\tCtrl+P", 6045
-    MENUITEM "&Properties...\tAlt+Enter", 6046
+    MENUITEM "&Run...\tF9", IDM_RUN
+    MENUITEM "&Find files...", IDM_WINFIND
+    MENUITEM "Pr&int...\tCtrl+P", IDM_PRINT
+    MENUITEM "&Properties...\tAlt+Enter", IDM_PROP
     MENUITEM SEPARATOR
-    MENUITEM "&Clear \"Documents\"", 6039
-    MENUITEM "&Empty clipboard", 6041
+    MENUITEM "&Clear \"Documents\"", IDM_CLEAR
+    MENUITEM "&Empty clipboard", IDM_ECLIP
     MENUITEM SEPARATOR
-    MENUITEM "&Set background color...", 6048
-    MENUITEM "Set &text color...", 6051
+    MENUITEM "&Set background color...", IDM_COLOR
+    MENUITEM "Set &text color...", IDM_FGCOLOR
     MENUITEM SEPARATOR
-    MENUITEM "Convert to &uppercase\tCtrl+U", 6049
-    MENUITEM "Convert to &lowercase\tCtrl+L", 6050
-    MENUITEM "C&onvert tabs to spaces...", 6047
+    MENUITEM "Convert to &uppercase\tCtrl+U", IDM_UPCASE
+    MENUITEM "Convert to &lowercase\tCtrl+L", IDM_LOWCASE
+    MENUITEM "C&onvert tabs to spaces...", IDM_TABS
     MENUITEM SEPARATOR
-    MENUITEM "Insert C function synopsis\tF10", 6056
+    MENUITEM "Insert C function synopsis\tF10", IDM_CCOM
     MENUITEM SEPARATOR
-    MENUITEM "All C function definitions... (from here)", 6058
-    MENUITEM "All C function declarations... (from here)", 6059
-    MENUITEM "All C function definitions... (selection)", 6060
-    MENUITEM "All C function declarations... (selection)", 6061
+    MENUITEM "All C function definitions... (from here)", IDM_CDEFS_ALL
+    MENUITEM "All C function declarations... (from here)", IDM_CDECL_ALL
+    MENUITEM "All C function definitions... (selection)", IDM_CDEFS_SEL
+    MENUITEM "All C function declarations... (selection)", IDM_CDECL_SEL
     MENUITEM SEPARATOR
-    MENUITEM "Run e&xternal tool...\tCtrl+F4", 6052
-    MENUITEM "Run last command on current file\tCtrl+B", 6063
+    MENUITEM "Run e&xternal tool...\tCtrl+F4", IDM_RUNEXT
+    MENUITEM "Run last command on current file\tCtrl+B", IDM_RUNLAST
   }
   POPUP "&View"
   {
-    MENUITEM "&Main window on top", 6016
-    MENUITEM "View output &window...\tEsc", 6053
+    MENUITEM "&Main window on top", IDM_ONTOP
+    MENUITEM "View output &window...\tEsc", IDM_VIEWOUT
   }
   POPUP "&User menu"
   {
     MENUITEM "Edit config file to add menus below", 7000, GRAYED
-    MENUITEM "", 0
+    MENUITEM "", IDMM_FILE
   }
   POPUP "&Help"
   {
-    MENUITEM "&Help\tF1", 6065
+    MENUITEM "&Help\tF1", IDM_HELP
     MENUITEM SEPARATOR
-    MENUITEM "&About...", 6030
+    MENUITEM "&About...", IDM_ABOUT
   }
 }
 
-104 ACCELERATORS
+IDR_ACCEL ACCELERATORS
 {
-  65, 6029, VIRTKEY, CONTROL, NOINVERT
-  67, 6026, VIRTKEY, CONTROL, NOINVERT
-  70, 6031, VIRTKEY, CONTROL, NOINVERT
-  71, 6034, VIRTKEY, CONTROL, NOINVERT
-  76, 6050, VIRTKEY, CONTROL, NOINVERT
-  78, 6021, VIRTKEY, CONTROL, NOINVERT
-  78, 6018, VIRTKEY, SHIFT, CONTROL, NOINVERT
-  79, 6022, VIRTKEY, CONTROL, NOINVERT
-  81, 6019, VIRTKEY, CONTROL, NOINVERT
-  83, 6023, VIRTKEY, CONTROL, NOINVERT
-  83, 6024, VIRTKEY, SHIFT, CONTROL, NOINVERT
-  84, 6033, VIRTKEY, CONTROL, NOINVERT
-  85, 6049, VIRTKEY, CONTROL, NOINVERT
-  86, 6027, VIRTKEY, CONTROL, NOINVERT
-  VK_ESCAPE, 6053, VIRTKEY, NOINVERT
-  VK_F10, 6056, VIRTKEY, NOINVERT
-  VK_F11, 6037, VIRTKEY, NOINVERT
-  VK_F12, 6038, VIRTKEY, NOINVERT
-  VK_F3, 6032, VIRTKEY, NOINVERT
-  VK_F3, 6042, VIRTKEY, CONTROL, NOINVERT
-  VK_F3, 6009, VIRTKEY, SHIFT
-  80, 6045, VIRTKEY, CONTROL
-  VK_F4, 6054, VIRTKEY, NOINVERT
-  VK_F4, 6052, VIRTKEY, CONTROL, NOINVERT
-  VK_F5, 6055, VIRTKEY, NOINVERT
-  VK_F9, 6043, VIRTKEY, NOINVERT
-  VK_F9, 6040, VIRTKEY, CONTROL, NOINVERT
-  VK_RETURN, 6046, VIRTKEY, ALT, NOINVERT
-  87, 6036, VIRTKEY, CONTROL, NOINVERT
-  88, 6025, VIRTKEY, CONTROL, NOINVERT
-  90, 6020, VIRTKEY, CONTROL, NOINVERT
-  VK_TAB, 6010, VIRTKEY, CONTROL
-  VK_TAB, 6011, VIRTKEY, SHIFT
-  89, 6017, VIRTKEY, CONTROL
-  66, 6063, VIRTKEY, CONTROL
+  65, IDM_SELALL, VIRTKEY, CONTROL, NOINVERT
+  67, IDM_COPY, VIRTKEY, CONTROL, NOINVERT
+  70, IDM_FIND, VIRTKEY, CONTROL, NOINVERT
+  71, IDM_GOTO, VIRTKEY, CONTROL, NOINVERT
+  76, IDM_LOWCASE, VIRTKEY, CONTROL, NOINVERT
+  78, IDM_NEW, VIRTKEY, CONTROL, NOINVERT
+  78, IDM_NEWINST, VIRTKEY, SHIFT, CONTROL, NOINVERT
+  79, IDM_OPEN, VIRTKEY, CONTROL, NOINVERT
+  81, IDM_QUIT, VIRTKEY, CONTROL, NOINVERT
+  83, IDM_SAVE, VIRTKEY, CONTROL, NOINVERT
+  83, IDM_SAVEAS, VIRTKEY, SHIFT, CONTROL, NOINVERT
+  84, IDM_MARGIN, VIRTKEY, CONTROL, NOINVERT
+  85, IDM_UPCASE, VIRTKEY, CONTROL, NOINVERT
+  86, IDM_PASTE, VIRTKEY, CONTROL, NOINVERT
+  VK_ESCAPE, IDM_VIEWOUT, VIRTKEY, NOINVERT
+  VK_F10, IDM_CCOM, VIRTKEY, NOINVERT
+  VK_F11, IDM_SAVESEL, VIRTKEY, NOINVERT
+  VK_F12, IDM_MERGE, VIRTKEY, NOINVERT
+  VK_F3, IDM_FINDNEXT, VIRTKEY, NOINVERT
+  VK_F3, IDM_FINDSEL, VIRTKEY, CONTROL, NOINVERT
+  VK_F3, IDM_FINDSEL_BK, VIRTKEY, SHIFT
+  80, IDM_PRINT, VIRTKEY, CONTROL
+  VK_F4, IDM_VIEWHEX, VIRTKEY, NOINVERT
+  VK_F4, IDM_RUNEXT, VIRTKEY, CONTROL, NOINVERT
+  VK_F5, IDM_REFR, VIRTKEY, NOINVERT
+  VK_F9, IDM_RUN, VIRTKEY, NOINVERT
+  VK_F9, IDM_VEXPLORE, VIRTKEY, CONTROL, NOINVERT
+  VK_RETURN, IDM_PROP, VIRTKEY, ALT, NOINVERT
+  87, IDM_WRAP, VIRTKEY, CONTROL, NOINVERT
+  88, IDM_CUT, VIRTKEY, CONTROL, NOINVERT
+  90, IDM_UNDO, VIRTKEY, CONTROL, NOINVERT
+  VK_TAB, IDM_TAB_UP, VIRTKEY, CONTROL
+  VK_TAB, IDM_TAB_DOWN, VIRTKEY, SHIFT
+  89, IDM_REDO, VIRTKEY, CONTROL
+  66, IDM_RUNLAST, VIRTKEY, CONTROL
 }
 
-105 DIALOG DISCARDABLE 0, 0, 206, 52
+IDD_GOTO DIALOG DISCARDABLE 0, 0, 206, 52
 STYLE WS_POPUP|DS_MODALFRAME|WS_CAPTION|WS_SYSMENU|WS_VISIBLE
 CAPTION "Goto line"
 FONT 8, "Tahoma"
 {
-  CONTROL "", 1004, "Edit", ES_NUMBER|ES_AUTOHSCROLL|WS_BORDER|WS_TABSTOP, 51, 7, 89, 12
-  CONTROL "&Ok", 1000, "Button", BS_DEFPUSHBUTTON|WS_TABSTOP, 149, 7, 50, 14
-  CONTROL "&Close", 1001, "Button", WS_TABSTOP, 149, 24, 50, 14
-  CONTROL "1", 1002, "Static", SS_LEFTNOWORDWRAP|WS_GROUP, 51, 26, 34, 8
-  CONTROL "1", 1003, "Static", SS_LEFTNOWORDWRAP|WS_GROUP, 51, 37, 33, 8
+  CONTROL "", IDC_DEST, "Edit", ES_NUMBER|ES_AUTOHSCROLL|WS_BORDER|WS_TABSTOP, 51, 7, 89, 12
+  CONTROL "&Ok", IDC_GOTO, "Button", BS_DEFPUSHBUTTON|WS_TABSTOP, 149, 7, 50, 14
+  CONTROL "&Close", IDC_CLOSE, "Button", WS_TABSTOP, 149, 24, 50, 14
+  CONTROL "1", IDC_LINES, "Static", SS_LEFTNOWORDWRAP|WS_GROUP, 51, 26, 34, 8
+  CONTROL "1", IDC_CRTLINE, "Static", SS_LEFTNOWORDWRAP|WS_GROUP, 51, 37, 33, 8
   CONTROL "Destination", -1, "Static", WS_GROUP, 7, 8, 36, 8
   CONTROL "Lines in file:", -1, "Static", WS_GROUP, 7, 26, 38, 8
   CONTROL "Current line:", -1, "Static", WS_GROUP, 7, 37, 37, 8
 }
 
-108 DIALOG DISCARDABLE 0, 0, 257, 94
+IDD_FIND DIALOG DISCARDABLE 0, 0, 257, 94
 STYLE WS_POPUP|DS_MODALFRAME|WS_CAPTION|WS_SYSMENU|WS_VISIBLE
 CAPTION "Find..."
 FONT 8, "Tahoma"
 {
-  CONTROL "", 1005, "ComboBox", WS_BORDER|CBS_DROPDOWN|CBS_AUTOHSCROLL|WS_VSCROLL|WS_TABSTOP, 56, 7, 136, 13
-  CONTROL "", 1012, "ComboBox", WS_BORDER|CBS_DROPDOWN|CBS_AUTOHSCROLL|WS_VSCROLL|WS_TABSTOP, 56, 23, 136, 13
-  CONTROL "&Case sensitive search", 1008, "Button", BS_AUTOCHECKBOX|WS_TABSTOP, 7, 43, 85, 10
-  CONTROL "&Match whole words only", 1009, "Button", BS_AUTOCHECKBOX|WS_TABSTOP, 7, 54, 92, 10
-  CONTROL "&Replace all occurences", 1010, "Button", BS_AUTOCHECKBOX|WS_TABSTOP, 7, 65, 91, 10
-  CONTROL "&Prompt on replace", 1011, "Button", BS_AUTOCHECKBOX|WS_TABSTOP, 7, 76, 73, 10
-  CONTROL "F&ind all", 1024, "Button", BS_AUTOCHECKBOX|WS_TABSTOP, 148, 55, 73, 10
-  CONTROL "F&orward search", 1023, "Button", BS_AUTOCHECKBOX|WS_TABSTOP, 148, 67, 73, 10
-  CONTROL "&Find", 1006, "Button", BS_DEFPUSHBUTTON|WS_TABSTOP, 200, 7, 50, 14
-  CONTROL "&Cancel", 1007, "Button", WS_TABSTOP, 200, 24, 50, 14
+  CONTROL "", IDC_FINDSTR, "ComboBox", WS_BORDER|CBS_DROPDOWN|CBS_AUTOHSCROLL|WS_VSCROLL|WS_TABSTOP, 56, 7, 136, 13
+  CONTROL "", IDC_REPSTR, "ComboBox", WS_BORDER|CBS_DROPDOWN|CBS_AUTOHSCROLL|WS_VSCROLL|WS_TABSTOP, 56, 23, 136, 13
+  CONTROL "&Case sensitive search", IDC_CASE, "Button", BS_AUTOCHECKBOX|WS_TABSTOP, 7, 43, 85, 10
+  CONTROL "&Match whole words only", IDC_WHOLE, "Button", BS_AUTOCHECKBOX|WS_TABSTOP, 7, 54, 92, 10
+  CONTROL "&Replace all occurences", IDC_REPALL, "Button", BS_AUTOCHECKBOX|WS_TABSTOP, 7, 65, 91, 10
+  CONTROL "&Prompt on replace", IDC_REPPROMPT, "Button", BS_AUTOCHECKBOX|WS_TABSTOP, 7, 76, 73, 10
+  CONTROL "F&ind all", IDC_FALL, "Button", BS_AUTOCHECKBOX|WS_TABSTOP, 148, 55, 73, 10
+  CONTROL "F&orward search", IDC_SFWD, "Button", BS_AUTOCHECKBOX|WS_TABSTOP, 148, 67, 73, 10
+  CONTROL "&Find", IDC_FIND, "Button", BS_DEFPUSHBUTTON|WS_TABSTOP, 200, 7, 50, 14
+  CONTROL "&Cancel", IDC_CANCEL, "Button", WS_TABSTOP, 200, 24, 50, 14
   CONTROL "Search for", -1, "Static", WS_GROUP, 7, 9, 34, 8
   CONTROL "Replace with", -1, "Static", WS_GROUP, 7, 25, 42, 8
 }
 
-111 DIALOG DISCARDABLE 0, 0, 227, 58
+IDD_ABOUT DIALOG DISCARDABLE 0, 0, 227, 58
 STYLE WS_POPUP|DS_MODALFRAME|DS_CENTER|WS_CAPTION|WS_SYSMENU
 CAPTION "About TextEdit"
 FONT 8, "Tahoma"
 {
-  CONTROL "&Not ok", IDCANCEL, "Button", BS_DEFPUSHBUTTON, 169, 36, 50, 14
-  CONTROL 508, -1, "Static", SS_ICON, 12, 7, 20, 20
-  CONTROL "TextEdit v2.1 - text editor with MMX/SSE2 support", -1, "Static", SS_CENTER|WS_GROUP, 45, 7, 175, 10
+  CONTROL "&Not ok", IDMM_TOOLS, "Button", BS_DEFPUSHBUTTON, 169, 36, 50, 14
+  CONTROL IDI_APP, -1, "Static", SS_ICON, 12, 7, 20, 20
+  CONTROL "TextEdit v2 - text editor with MMX/SSE2 support", -1, "Static", SS_CENTER|WS_GROUP, 43, 7, 175, 10
   CONTROL "Copyright © 2002-2020, Adrian Petrila, YO3GFH.", -1, "Static", SS_CENTER|WS_GROUP, 45, 19, 175, 10
-  CONTROL "yayyyyy :)))", -1, "Static", WS_DISABLED|WS_GROUP, 9, 42, 53, 8
+  CONTROL "yayyyyy :)))", IDC_VER, "Static", WS_DISABLED|WS_GROUP, 6, 46, 148, 8
 }
 
-112 DIALOG DISCARDABLE 0, 0, 158, 54
+IDD_TABS DIALOG DISCARDABLE 0, 0, 158, 54
 STYLE WS_POPUP|DS_MODALFRAME|WS_CAPTION|WS_SYSMENU
 CAPTION "Convert tabs to spaces..."
 FONT 8, "Tahoma"
 {
-  CONTROL "", 1013, "Edit", ES_NUMBER|ES_AUTOHSCROLL|WS_BORDER|WS_TABSTOP, 77, 7, 45, 13
-  CONTROL "Convert", IDOK, "Button", BS_DEFPUSHBUTTON|WS_TABSTOP, 47, 33, 50, 14
-  CONTROL "Close", IDCANCEL, "Button", WS_TABSTOP, 101, 33, 50, 14
+  CONTROL "", IDC_TABSTOPS, "Edit", ES_NUMBER|ES_AUTOHSCROLL|WS_BORDER|WS_TABSTOP, 77, 7, 45, 13
+  CONTROL "Convert", IDMM_EDIT, "Button", BS_DEFPUSHBUTTON|WS_TABSTOP, 47, 33, 50, 14
+  CONTROL "Close", IDMM_TOOLS, "Button", WS_TABSTOP, 101, 33, 50, 14
   CONTROL "Replace all tabs with", -1, "Static", WS_GROUP, 7, 8, 66, 8
   CONTROL "spaces", -1, "Static", WS_GROUP, 127, 8, 24, 8
 }
 
-107 DIALOG DISCARDABLE 0, 0, 255, 166
+IDD_EXT DIALOG DISCARDABLE 0, 0, 255, 166
 STYLE WS_POPUP|DS_MODALFRAME|WS_CAPTION|WS_SYSMENU
 CAPTION "Execute tool..."
 FONT 8, "Tahoma"
 {
-  CONTROL "", 1014, "ComboBox", WS_BORDER|CBS_DROPDOWN|CBS_AUTOHSCROLL|WS_VSCROLL|WS_TABSTOP, 58, 7, 190, 216
-  CONTROL "", 1020, "Edit", ES_AUTOHSCROLL|WS_BORDER|WS_TABSTOP, 58, 23, 190, 13
-  CONTROL "&Capture output of console apps", 1019, "Button", BS_AUTOCHECKBOX|WS_TABSTOP, 7, 146, 115, 10
-  CONTROL "&Execute", IDOK, "Button", BS_DEFPUSHBUTTON|WS_TABSTOP, 144, 144, 50, 14
-  CONTROL "&Close", IDCANCEL, "Button", WS_TABSTOP, 198, 144, 50, 14
+  CONTROL "", IDC_CB, "ComboBox", WS_BORDER|CBS_DROPDOWN|CBS_AUTOHSCROLL|WS_VSCROLL|WS_TABSTOP, 58, 7, 190, 216
+  CONTROL "", IDC_WKDIR, "Edit", ES_AUTOHSCROLL|WS_BORDER|WS_TABSTOP, 58, 23, 190, 13
+  CONTROL "&Capture output of console apps", IDC_CKREDIR, "Button", BS_AUTOCHECKBOX|WS_TABSTOP, 7, 146, 115, 10
+  CONTROL "&Execute", IDMM_EDIT, "Button", BS_DEFPUSHBUTTON|WS_TABSTOP, 144, 144, 50, 14
+  CONTROL "&Close", IDMM_TOOLS, "Button", WS_TABSTOP, 198, 144, 50, 14
   CONTROL "Command line", 1015, "Static", WS_GROUP, 7, 8, 45, 8
   CONTROL "Working dir", -1, "Static", WS_GROUP, 15, 24, 37, 8
-  CONTROL "", 1024, "Static", SS_SUNKEN|WS_GROUP, 6, 44, 242, 91
+  CONTROL "", IDC_FALL, "Static", SS_SUNKEN|WS_GROUP, 6, 44, 242, 91
 }
 
-106 DIALOGEX DISCARDABLE 0, 0, 394, 66
+IDD_OUT DIALOGEX DISCARDABLE 0, 0, 394, 66
 STYLE WS_THICKFRAME|WS_CAPTION|WS_SYSMENU
 EXSTYLE WS_EX_TOOLWINDOW
 CAPTION "Output window"
 FONT 10, "Consolas", 0, 0, 0
 {
-  CONTROL "List1", 1021, "ListBox", LBS_EXTENDEDSEL|LBS_NOINTEGRALHEIGHT|LBS_NOTIFY|WS_HSCROLL|WS_VSCROLL|WS_BORDER|WS_TABSTOP, 2, 3, 391, 63
+  CONTROL "List1", IDC_LIST, "ListBox", LBS_EXTENDEDSEL|LBS_NOINTEGRALHEIGHT|LBS_NOTIFY|WS_HSCROLL|WS_VSCROLL|WS_BORDER|WS_TABSTOP, 2, 3, 391, 63
 }
 
-113 DIALOGEX DISCARDABLE 0, 0, 334, 66
+IDD_HEX DIALOGEX DISCARDABLE 0, 0, 334, 66
 STYLE WS_THICKFRAME|WS_CAPTION|WS_SYSMENU
 EXSTYLE WS_EX_TOOLWINDOW
 CAPTION "Hexadecimal view"
 FONT 10, "Consolas", 0, 0, 0
 {
-  CONTROL "List1", 1022, "ListBox", LBS_EXTENDEDSEL|LBS_NOINTEGRALHEIGHT|LBS_NOTIFY|WS_HSCROLL|WS_VSCROLL|WS_BORDER|WS_TABSTOP, 2, 3, 331, 63
+  CONTROL "List1", IDC_HEXLIST, "ListBox", LBS_EXTENDEDSEL|LBS_NOINTEGRALHEIGHT|LBS_NOTIFY|WS_HSCROLL|WS_VSCROLL|WS_BORDER|WS_TABSTOP, 2, 3, 331, 63
 }
 
-508 ICON "res1.ico"
-509 ICON "sav.ico"
-510 ICON "mod.ico"
+IDI_APP ICON "res1.ico"
 
-2001 MENUEX
+IDI_SAV ICON "sav.ico"
+
+IDI_MOD ICON "mod.ico"
+
+IDR_OUTWMENU MENUEX
 {
-  POPUP "Popup1", 0, 0, 0
+  POPUP "Popup1", IDMM_FILE, 0, 0
   {
-    MENUITEM "Copy all lines to clipboard\tDbl click", 6001, 0, 0
-    MENUITEM "Copy selection to clipboard", 6057, 0, 0
-    MENUITEM "Select all items", 6062, 0, 0
-    MENUITEM "Clear output window", 6064, 0, 0
+    MENUITEM "Copy all lines to clipboard\tDbl click", IDM_CPLINES, 0, 0
+    MENUITEM "Copy selection to clipboard", IDM_CPSEL, 0, 0
+    MENUITEM "Select all items", IDM_CP_SELALL, 0, 0
+    MENUITEM "Clear output window", IDM_OUTWCLEAR, 0, 0
   }
 }
 
 STRINGTABLE
 {
-  0, "Contains file commands."
-  1, "Contains edit commands."
-  2, "Contains tools commands."
-  3, "Contains view commands."
-  4, "Contains user defined menus."
-  5, "Contains nothing useful."
+  IDMM_FILE, "Contains file commands."
+  IDMM_EDIT, "Contains edit commands."
+  IDMM_TOOLS, "Contains tools commands."
+  IDMM_VIEW, "Contains view commands."
+  IDMM_USER, "Contains user defined menus."
+  IDMM_HELP, "Contains nothing useful."
 }
 
 STRINGTABLE
 {
-  6002, "Saves current file with UTF8 encoding."
-  6003, "Saves current file with UTF8 (BOM) encoding."
-  6004, "Saves current file with UTF16-LE encoding."
-  6005, "Saves current file with UTF16-BE encoding."
-  6006, "Saves current file with UTF16-LE (BOM) encoding."
-  6007, "Saves current file with UTF16-BE (BOM) encoding."
-  6008, "Saves current file with ANSI encoding."
-  6009, "Searches for the next backward occurence of selected text."
-  6012, "Saves current file with UTF32-LE encoding."
-  6013, "Saves current file with UTF32-BE encoding."
-  6014, "Saves current file with UTF32-LE (BOM) encoding."
-  6015, "Saves current file with UTF32-BE (BOM) encoding."
+  IDM_UTF8, "Saves current file with UTF8 encoding."
+  IDM_UTF8_BOM, "Saves current file with UTF8 (BOM) encoding."
+  IDM_UTF16_LE, "Saves current file with UTF16-LE encoding."
+  IDM_UTF16_BE, "Saves current file with UTF16-BE encoding."
+  IDM_UTF16_LE_BOM, "Saves current file with UTF16-LE (BOM) encoding."
+  IDM_UTF16_BE_BOM, "Saves current file with UTF16-BE (BOM) encoding."
+  IDM_ANSI, "Saves current file with ANSI encoding."
+  IDM_FINDSEL_BK, "Searches for the next backward occurence of selected text."
+  IDM_UTF32_LE, "Saves current file with UTF32-LE encoding."
+  IDM_UTF32_BE, "Saves current file with UTF32-BE encoding."
+  IDM_UTF32_LE_BOM, "Saves current file with UTF32-LE (BOM) encoding."
+  IDM_UTF32_BE_BOM, "Saves current file with UTF32-BE (BOM) encoding."
 }
 
 STRINGTABLE
 {
-  6016, "Keeps main program window on top."
-  6017, "Redoes the last action."
-  6018, "Creates a new instance of TextEdit. Wastes even more RAM."
-  6019, "Quits this program. Prompts to save documents and to go outside and get a life."
-  6020, "Undoes the last action."
-  6021, "Creates a new, empty file."
-  6022, "Opens a file from disk."
-  6023, "Saves current file to disk."
-  6024, "Saves current file under a different name."
-  6025, "Cuts the selection and moves it to the clipboard device."
-  6026, "Copies the selection to the clipboard device."
-  6027, "Transfers the content of the clipboard device into your text."
-  6028, "Deletes the selection."
-  6029, "Selects the entire document."
-  6030, "Displays version number and whatever. Enables MMX and SSE2."
-  6031, "Performs search & replace on current file."
+  IDM_ONTOP, "Keeps main program window on top."
+  IDM_REDO, "Redoes the last action."
+  IDM_NEWINST, "Creates a new instance of TextEdit. Wastes even more RAM."
+  IDM_QUIT, "Quits this program. Prompts to save documents and to go outside and get a life."
+  IDM_UNDO, "Undoes the last action."
+  IDM_NEW, "Creates a new, empty file."
+  IDM_OPEN, "Opens a file from disk."
+  IDM_SAVE, "Saves current file to disk."
+  IDM_SAVEAS, "Saves current file under a different name."
+  IDM_CUT, "Cuts the selection and moves it to the clipboard device."
+  IDM_COPY, "Copies the selection to the clipboard device."
+  IDM_PASTE, "Transfers the content of the clipboard device into your text."
+  IDM_DEL, "Deletes the selection."
+  IDM_SELALL, "Selects the entire document."
+  IDM_ABOUT, "Displays version number and whatever. Enables MMX and SSE2."
+  IDM_FIND, "Performs search & replace on current file."
 }
 
 STRINGTABLE
 {
-  6032, "Damn, again\?"
-  6033, "Toggles selection margin."
-  6034, "Go to the specified line."
-  6035, "Changes current editor font."
-  6036, "Toggles word wrapping."
-  6037, "Saves current selection to a file."
-  6038, "Inserts a text file to current cursor position."
-  6039, "Clears all items from \"Documents\" menu."
-  6040, "Opens current file in default browser."
-  6041, "Wipes the clipboard, frees a little RAM."
-  6042, "Searches for the next forward occurence of selected text."
-  6043, "Displays the well known \"Run\" dialog."
-  6044, "Displays the \"Find files or folders\" dialog."
-  6045, "Displays the \"Print\" dialog."
-  6046, "Displays the \"Properties\" dialog for the current file."
-  6047, "Converts tab characters to the specified number of spaces."
+  IDM_FINDNEXT, "Damn, again\?"
+  IDM_MARGIN, "Toggles selection margin."
+  IDM_GOTO, "Go to the specified line."
+  IDM_FONT, "Changes current editor font."
+  IDM_WRAP, "Toggles word wrapping."
+  IDM_SAVESEL, "Saves current selection to a file."
+  IDM_MERGE, "Inserts a text file to current cursor position."
+  IDM_CLEAR, "Clears all items from \"Documents\" menu."
+  IDM_VEXPLORE, "Opens current file in default browser."
+  IDM_ECLIP, "Wipes the clipboard, frees a little RAM."
+  IDM_FINDSEL, "Searches for the next forward occurence of selected text."
+  IDM_RUN, "Displays the well known \"Run\" dialog."
+  IDM_WINFIND, "Displays the \"Find files or folders\" dialog."
+  IDM_PRINT, "Displays the \"Print\" dialog."
+  IDM_PROP, "Displays the \"Properties\" dialog for the current file."
+  IDM_TABS, "Converts tab characters to the specified number of spaces."
 }
 
 STRINGTABLE
 {
-  6048, "Changes editor background color."
-  6049, "Converts selected text to uppercase."
-  6050, "Converts selected text to lowercase."
-  6051, "Changes editor text color."
-  6052, "Executes a program, optionally capturing output."
-  6053, "Displays output window."
-  6054, "View current selection as (s)hex."
-  6055, "Reopens current file."
-  6056, "Inserts a nice synopsis as comment around C function at cursor (or selected)."
-  6058, "Displays a list of all C function definitions from cursor to EOF."
-  6059, "Displays a list of all C function declarations from cursor to EOF."
-  6060, "Displays a list of all C function definitions from current selection."
-  6061, "Displays a list of all C function declarations from current selection."
-  6063, "Executes the last \"Run External Tool\" command, optionally capturing output."
-  6065, "Displays the help file, if any :-)"
+  IDM_COLOR, "Changes editor background color."
+  IDM_UPCASE, "Converts selected text to uppercase."
+  IDM_LOWCASE, "Converts selected text to lowercase."
+  IDM_FGCOLOR, "Changes editor text color."
+  IDM_RUNEXT, "Executes a program, optionally capturing output."
+  IDM_VIEWOUT, "Displays output window."
+  IDM_VIEWHEX, "View current selection as (s)hex."
+  IDM_REFR, "Reopens current file."
+  IDM_CCOM, "Inserts a nice synopsis as comment around C function at cursor (or selected)."
+  IDM_CDEFS_ALL, "Displays a list of all C function definitions from cursor to EOF."
+  IDM_CDECL_ALL, "Displays a list of all C function declarations from cursor to EOF."
+  IDM_CDEFS_SEL, "Displays a list of all C function definitions from current selection."
+  IDM_CDECL_SEL, "Displays a list of all C function declarations from current selection."
+  IDM_RUNLAST, "Executes the last \"Run External Tool\" command, optionally capturing output."
+}
+
+STRINGTABLE
+{
+  IDM_HELP, "Displays the help file, if any :-)"
 }
 
 STRINGTABLE
