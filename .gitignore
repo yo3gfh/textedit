@@ -8,3 +8,4 @@ setup
 *.bak
 *.ini
 *.map
+*.cmd

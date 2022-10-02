@@ -4,7 +4,7 @@
 
 #include <windows.h>
 
-#define MAX_USER_MENUS 40 // max entries in user menu
+#define MAX_USER_MENUS 50 // max entries in user menu
 
 typedef struct _tag_usermenu
 {

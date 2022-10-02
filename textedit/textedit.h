@@ -120,7 +120,7 @@
 #define         OFN_BUF_SIZE        0x0000FFFF
 #define         CAPTURE_BUF_SIZE    0x80000 // 128k
 #define         CARET_WIDTH         8       // 2 for "normal" caret
-#define         MAX_TABS            15      // this is enough for *me* :-)
+#define         MAX_TABS            32      // this is enough for *me* :-)
                                             // change it or switch to a 
                                             // dynamic TAB_DATA array
 #define         WIN_CLASS           CS_DBLCLKS|CS_BYTEALIGNWINDOW| \

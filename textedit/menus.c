@@ -95,7 +95,7 @@ TCHAR * GetMenuItemText ( HMENU hmenu, int menu_id )
 //    DESCRIPTION: Load user defined menu items from "ininame" config file.
 //                 Entries must be added under [user menu] section and should
 //                 have the following structure:
-//                   keyname>={separator}   or  
+//                   <keyname>={separator}   or  
 //                   <keyname>=<caption>,<command>,<crtdir>,<capture(0/1)>
 //                   where <keyname> can be anything as long as it is unique,
 //                   <caption> is the menu caption, <command> is the
@@ -108,7 +108,7 @@ TCHAR * GetMenuItemText ( HMENU hmenu, int menu_id )
 //                   the startup dir. of the editor will be used. The
 //                   <command> portion supports the macros that ExpandMacro
 //                   knows about, see the synoptic. You can add a maximum of
-//                   40 user defined menus (not counting separators).
+//                   50 user defined menus (not counting separators).
 /*--------------------------------------------------------------------@@-@@-*/
 INT_PTR LoadUserMenu ( HMENU hMenu, USER_MENU * puMenu, const TCHAR * ininame )
 /*--------------------------------------------------------------------------*/
